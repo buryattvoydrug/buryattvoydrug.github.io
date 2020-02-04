@@ -1,3 +1,3 @@
 # Мои работы
 
-[Skinali](https://github.com/buryattvoydrug/buryattvoydrug.github.io/skinali/)
+[Skinali](https://buryattvoydrug.github.io/skinali/)
