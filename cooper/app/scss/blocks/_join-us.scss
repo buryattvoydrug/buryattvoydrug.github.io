@@ -1,5 +1,5 @@
 .join-us{
-    background: url(../../images/join-us/section_bg.png) no-repeat;
+    background: url(../images/join-us/section_bg.png) no-repeat;
     opacity: 0.95;
     padding-bottom: 43px;
     .section__title{
@@ -18,7 +18,7 @@
             padding: 50px 0 0 0;
             width: 470px;
             height: 260px;
-            background: url(../../images/join-us/form-bg.png);
+            background: url(../images/join-us/form-bg.png);
             .form-row{
                 padding-left: 47px;
                 display: flex;
@@ -69,7 +69,7 @@
             position: absolute;
             content: "";
             display: block;
-            background: url(../../images/join-us/tape.png) top left no-repeat;
+            background: url(../images/join-us/tape.png) top left no-repeat;
         }
         .wrapper:after{
             z-index: 5;
@@ -81,7 +81,7 @@
             position: absolute;
             content: "";
             display: block;
-            background: url(../../images/join-us/tape.png) top left no-repeat;
+            background: url(../images/join-us/tape.png) top left no-repeat;
         }
         .join-us__item:after{
             width: 100%;
@@ -90,7 +90,7 @@
             content: "";
             display: block;
             bottom: -13px;
-            background: url(../../images/join-us/note_shadow.png) bottom no-repeat;
+            background: url(../images/join-us/note_shadow.png) bottom no-repeat;
         }
     }
 }
