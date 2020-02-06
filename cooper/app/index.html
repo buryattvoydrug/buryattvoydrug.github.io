@@ -14,20 +14,29 @@
                     feel the excitement <div class="big">get ready</div> <div class="small">we are comming soon</div>
                 </h1>
                 <div class="header-counter">
-                    <div class="counter-block cocounter__item unter-days-block">
-                        <div class="counter__item counter__days">12</div>
+                    <div class="counter-block counter__item counter-days-block">
+                        <div class="timer-item" id="timer-v-days">
+                            <div class="timer-item__numbers" id="timer-v-days-1"></div>
+                            <div class="timer-item__numbers" id="timer-v-days-2"></div>
+                        </div>
                         <div class="counter__label counter-days__label">
                             days
                         </div>
                     </div>
                     <div class="counter-block counter-hours-block">
-                        <div class="counter__item counter__hours">08</div>
+                        <div class="timer-item" id="timer-v-hours">
+                            <div class="timer-item__numbers" id="timer-v-hours-1"></div>
+                            <div class="timer-item__numbers" id="timer-v-hours-2"></div>
+                        </div>
                         <div class="counter__label counter-hours__label">
                             hours
                         </div>
                     </div>
                     <div class="counter-block counter-min-block">
-                        <div class="counter__item counter__min">52 </div>
+                        <div class="timer-item" id="timer-v-minutes">
+                            <div class="timer-item__numbers" id="timer-v-minutes-1"></div>
+                            <div class="timer-item__numbers" id="timer-v-minutes-2"></div>
+                        </div>
                         <div class="counter__label counter-min__label">
                             min
                         </div>
@@ -48,16 +57,17 @@
                     </div>
                     <div class="wrapper">
                         <div class="join-us__item join-us-letter">
-                            <form action="#" class="join-us-form">
+                            <form action="index.php" class="join-us-form" method="post">
                                 <div class="form-row">
-                                    <input type="text" placeholder="Your name" class="input form__name georgia">
-                                    <input type="text" placeholder="Your email" class="input form__mail georgia">
+                                    <input type="text" placeholder="Your name" class="input form__name georgia" name="name">
+                                    <input type="text" placeholder="Your email" class="input form__mail georgia" name="email">
                                 </div>
                                 <div class="form-row">
-                                    <textarea  class="input form__message georgia" placeholder="Your message" name="" id="" cols="30" rows="10"></textarea>
+                                    <textarea  class="input form__message georgia" placeholder="Your message" name="message" id="" cols="30" rows="10"></textarea>
                                 </div>
+                                <button type="submit" class="button">SUBMIT </button>
                             </form>
-                        <button class="button">SUBMIT </button>
+<!--                        <button type="submit" class="button">SUBMIT </button>-->
                         </div>
                     </div>
                 </div>
@@ -82,5 +92,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

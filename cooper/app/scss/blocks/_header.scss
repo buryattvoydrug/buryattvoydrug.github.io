@@ -34,20 +34,23 @@
         }
     }
     .header-counter{
-        padding: 71px 0 0 5px;
+        padding: 71px 0 0 10px;
         display: flex;
         .counter-block{
             width: 101px;
             margin: 0 20px;
-            .counter__item{
+            .timer-item{
+                display: flex;
+            }
+            .timer-item__numbers{
+                height: 84px;
+                width: 50px;
                 text-align: center;
-                background: url(../images/header/bg.png) no-repeat left 0,
-                    url(../images/header/bg.png) no-repeat right 0;
+                background: url(../images/header/bg.png) no-repeat left 0;
                 color: #f7f5ee;
                 font-size: 70px;
-                line-height: 52px;
-                letter-spacing: 28px;
-                padding: 10px 0 22px 10px;
+                line-height: 37px;
+                padding: 18px 0 0;
                 margin-bottom: 0;
             }
             .counter__days{
