@@ -65,3 +65,30 @@
         }
     }
 }
+@media (max-width: 769px){
+    .header{
+        min-height: 700px;
+        position: relative;
+        background: url(../images/header/header-bg-1.png) bottom -30% left 50% no-repeat,url(../images/header/header-bg-2.png) top -510px left -447px no-repeat,url(../images/header/header-bg-3.png) top -706px left -780px no-repeat,url(../images/header/tower.png) top 356px left 238px no-repeat,radial-gradient(circle 886px at center, #79a49b 0%, #688781 100%);
+    }
+    .header-block{
+        position: absolute;
+        top: 20%;
+        padding: 0 !important;
+    }
+    .counter-block{
+        margin: 0 4px !important;
+    }
+    .small{
+        font-size: 58px !important;
+        line-height: 73px !important;
+    }
+    .big{
+        font-size: 130px !important;
+        line-height: 75px !important;
+    }
+    .header__title{
+        font-size: 59px !important;
+        line-height: 25px !important;
+    }
+}

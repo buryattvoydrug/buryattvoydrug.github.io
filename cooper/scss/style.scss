@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    margin: 212px 215px 216px;
+    margin: 212px auto;
     background: url(../images/back-bg.png) no-repeat;
     background-size: cover;
     @include bold;
@@ -19,6 +19,12 @@ body{
 .container{
     width: 1170px;
     margin: auto;
+}
+@media (max-width: 1599px){
+    .container{
+        max-width: 1170px;
+        margin: auto;
+    }
 }
 @media (min-width: 992px)and(max-width:1199px){
     .container{
@@ -31,8 +37,14 @@ body{
     }
 }
 @media (max-width: 768px){
+    body{
+        margin: auto;
+    }
     .container{
         max-width: 100%;
-        padding: 0 30px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
