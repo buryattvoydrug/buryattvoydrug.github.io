@@ -470,21 +470,21 @@
                 <div class="offer__block offer-block">
                     <h2 class="offer__title">ИЩИТЕ ГДЕ ДЕШЕВЛЕ И ЛУЧШЕ?</h2>
                     <span class="offer__subtitle">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее - и мы вам пересчитаем заказ с максимальной скидкой</span>
-                    <form action="#" class="form offer__form">
+                    <form action="php/price.php" class="form offer__form" method="post">
                         <div class="form-row">
                             <div class="form__group">
-                                <input placeholder="Ваше имя" class="input offer__input" type="text">
+                                <input placeholder="Ваше имя" class="input offer__input" type="text" name="name">
                             </div>
                             <div class="form__group">
-                                <input placeholder="Ваш телефон" class="input offer__input" type="tel">
+                                <input placeholder="Ваш телефон" class="input offer__input" type="tel" name="phone">
                             </div>
                             <div class="form__group">
-                                <input placeholder="Ваша цена" class="input offer__input" type="text">
+                                <input placeholder="Ваша цена" class="input offer__input" type="text" name="price">
                             </div>
                         </div>
                         <div class="form-row bottom-row">
                             <div class="form__group">
-                                <button class="button offer__button">Получить расчет со скидкой</button>
+                                <button type="submit" class="button offer__button">Получить расчет со скидкой</button>
                             </div>
                             <span class="sequrity">Ваши данные надежно защищены. <br>Отправление заявки ни к чему не обязывает.</span>
                         </div>
