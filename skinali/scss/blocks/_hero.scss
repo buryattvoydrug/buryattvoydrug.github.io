@@ -1,0 +1,38 @@
+.hero{
+    background: #f1f1f1 url('../images/hero/hero-bg.jpg') no-repeat center top 82px;
+    background-size: contain;
+    padding: 196px 0 375px;
+    .hero__title{
+        color: #252525;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .hero__subtitle{
+        display: block;
+        @include bold;
+        color: #121212;
+        font-size: 30px;
+        margin: 35px 0 65px;
+        sup{
+            font-size: 18px;
+        }
+    }
+}
+@media (min-width: 992px)and(max-width:1199px){
+    .hero{
+        background: #f1f1f1 url('../images/hero/hero-bg.jpg') no-repeat right -600px top 82px;
+    }
+}
+@media (min-width: 769px)and(max-width: 991px){
+    .hero{
+        background: #f1f1f1 url('../images/hero/hero-bg.jpg') no-repeat right -700px top 82px;
+    }
+}
+@media (max-width: 768px){
+    .hero{
+        background: #f1f1f1 url("../images/hero/hero-xs-bg.jpg") no-repeat right -312px top 82px;
+        padding-top: 140px;
+
+    }
+}
+

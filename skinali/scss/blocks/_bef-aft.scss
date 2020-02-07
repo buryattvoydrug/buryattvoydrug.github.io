@@ -1,0 +1,22 @@
+.bef-aft{
+    .section__title{
+        margin: 111px 0 97px;
+    }
+    .bef-aft-slider{
+        .bef-aft-slider__item{
+            max-width: 970px;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .slick-arrow{
+        display: none !important;
+    }
+}
+@media (max-width: 767px){
+    .bef-aft{
+        display: none !important;
+    }
+}

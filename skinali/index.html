@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
     <title>Фабрика Skinali</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/png">
     <link rel="stylesheet" href="css/style.min.css">
@@ -62,11 +62,11 @@
                 <div class="offer__block offer-block">
                     <h2 class="offer__title">ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЕТ</h2>
                     <span class="offer__subtitle">и получите скидку 30% на изготовление скинали или фартука для кухни</span>
-                    <form action="#" class="form offer__form">
+                    <form action="php/index.php" class="form offer__form" method="post">
                         <div class="form-row">
                             <div class="form__group">
                                 <label for="" class="offer__label">Вид стекла</label>
-                                <input class="input offer__input" type="hidden" value="С печатью" id="select-type">
+                                <input class="input offer__input" type="hidden" value="С печатью" id="select-type" name="glass_type">
                                 <div class="select form__select">
                                     <div class="select_checked">
                                         С печатью
@@ -80,22 +80,22 @@
                             </div>
                             <div class="form__group">
                                 <label for="" class="offer__label">Ширина, см</label>
-                                <input class="input offer__input" type="text">
+                                <input class="input offer__input" type="text" name="width">
                             </div>
                             <div class="form__group">
                                 <label for="" class="offer__label">Высота, см</label>
-                                <input class="input offer__input" type="text">
+                                <input class="input offer__input" type="text" name="height">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form__group">
-                               <input type="checkbox" id="montage" class="input offer__input">
+                               <input type="checkbox" id="montage" class="input offer__input" name="montage">
                                 <label for="montage" class="checkbox__label">
                                     Монтаж
                                 </label>
                             </div>
                             <div class="form__group">
-                               <input type="checkbox" id="delivery" class="input offer__input">
+                               <input type="checkbox" id="delivery" class="input offer__input" name="delivery">
                                 <label for="delivery" class="checkbox__label">
                                     Доставка
                                 </label>
@@ -103,13 +103,13 @@
                         </div>
                         <div class="form-row">
                             <div class="form__group">
-                                <input class="input offer__input" placeholder="Ваше имя" type="text">
+                                <input class="input offer__input" placeholder="Ваше имя" type="text" name="name">
                             </div>
                             <div class="form__group">
-                                <input class="input offer__input" placeholder="Ваш телефон" type="tel">
+                                <input class="input offer__input" placeholder="Ваш телефон" type="tel" name="phone">
                             </div>
                             <div class="form__group">
-                                <button class="button offer__button">Получить скидку</button>
+                                <button type="submit" class="button offer__button">Получить скидку</button>
                             </div>
                         </div>
                     </form>
