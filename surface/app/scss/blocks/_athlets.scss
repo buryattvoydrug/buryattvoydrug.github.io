@@ -1,0 +1,110 @@
+.athlets__section{
+    background: linear-gradient(to bottom, #fff 42.19%,  #f5f4fa 42.19%, 69%, #5e42b0 69%);
+}
+.athlets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .athlets-block{
+        max-width: 51%;
+        padding-left: 93px;
+        .section__title{
+            margin-bottom: 0px;
+            padding: 20px 5px 0;
+        }
+        .articles-list{
+            .arcticle__item:nth-child(1){
+                padding: 66px 0 35px;
+                .sport__text{
+                    padding-left: 3px;
+                }
+            }
+            .arcticle__item:nth-child(2){
+                padding: 59px 0 39px;
+            }
+            .arcticle__item:nth-child(3){
+                padding: 84px 0 80px;
+            }
+            .arcticle__item{
+                .article-title{
+                    display: flex;
+                    .article__title{
+                        margin: 0;
+                    }
+                }
+                .sport__text{
+                    display: block;
+                    padding: 16px 0 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .athlets-img{
+        position: relative;
+        width: 45%;
+        .athlets__img{
+            position: absolute;
+            top: 40px;
+            right: -85px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width:1199px){
+.athlets__section{
+    background: linear-gradient(to bottom, #fff 42.19%,  #f5f4fa 42.19%, 69%, #5e42b0 69%);
+}
+.athlets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .athlets-block{
+        max-width: 60%;
+        padding-left: 0;
+        .section__title{
+            margin: 0px;
+            padding: 64px 0 0;
+        }
+        .articles-list{
+            .arcticle__item:nth-child(1){
+                padding: 66px 0 35px;
+                .sport__text{
+                    padding-left: 3px;
+                }
+            }
+            .arcticle__item:nth-child(2){
+                padding: 59px 0 39px;
+            }
+            .arcticle__item:nth-child(3){
+                padding: 84px 0 80px;
+            }
+            .arcticle__item{
+                .article-title{
+                    display: flex;
+                    .article__title{
+                        margin: 0;
+                    }
+                }
+                .sport__text{
+                    display: block;
+                    padding: 16px 0 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .athlets-img{
+        position: relative;
+        width: 35%;
+        .athlets__img{
+            position: absolute;
+            top: 93px;
+            height: 67%;
+            right: -44px;
+        }
+    }
+}
+}
+@media (max-width: 767px){
+
+}
