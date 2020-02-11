@@ -1,0 +1,33 @@
+.about-us{
+    .about-us-textblock{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .about-us__textblock{
+            max-width: 49%;
+        }
+    }
+    .about-us-carousel{
+        margin: 66px 0 99px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .carousel-item{
+            .carousel-item-title{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .about-us__name{
+                    @include m-regular(14px);
+                    text-transform: uppercase;
+                    display:block;
+                    margin: 12.5px 0px 9px 7px;
+                }
+                .about-us__job{
+                    @include r-regular(13px);
+                    display:block;
+                }
+            }
+        }
+    }
+}
