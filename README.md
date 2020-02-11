@@ -1,5 +1,5 @@
 # Мои работы
-[surface](https://buryattvoydrug.github.io/mars/app/)
+[mars](https://buryattvoydrug.github.io/mars/app/)
 
 [surface](https://buryattvoydrug.github.io/surface/)
 
