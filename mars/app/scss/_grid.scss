@@ -1,4 +1,4 @@
-<<<<<<< HEAD:mars/app/scss/_grid.scss
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -17,27 +17,3 @@
         padding: 0 30px;
     }
 }
-=======
-*{
-    box-sizing: border-box;
-}
-main{
-    overflow-x: hidden;
-}
-.container{
-    max-width: 1630px;
-    padding: 0 40px;
-    margin: auto;
-}
-@media (min-width: 768px) and (max-width:1199px){
-    .container{
-        padding: 0 12px;
-    }
-
-}
-@media (max-width: 767px){
-    .container{
-        padding: 0 10px;
-    }
-}
->>>>>>> e92aa53a1ce1201349dc55a62df0caff10b9f524:surface/scss/_grid.scss

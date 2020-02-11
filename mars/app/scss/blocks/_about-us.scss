@@ -8,13 +8,13 @@
         }
     }
     .about-us-carousel{
-        margin: 66px 0 99px;
+        margin: 66px 0 0;
+        padding-bottom: 99px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         .carousel-item{
-            width: 263px !important;
-            margin: 0 11px;
+            padding: 0 29px 0 0;
             .carousel-item-title{
                 display: flex;
                 flex-direction: column;
@@ -23,7 +23,7 @@
                     @include m-regular(14px);
                     text-transform: uppercase;
                     display:block;
-                    margin: 12.5px 0px 9px 7px;
+                    margin: 17.5px 0px 9px 7px;
                 }
                 .about-us__job{
                     @include r-regular(13px);
