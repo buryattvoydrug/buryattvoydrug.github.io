@@ -1,0 +1,74 @@
+.about-us{
+    .about-us-textblock{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .about-us__textblock{
+            max-width: 49%;
+        }
+    }
+    .about-us-carousel{
+        margin: 66px 0 0;
+        padding-bottom: 99px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .carousel-item{
+            position: relative;
+            padding: 0 29px 0 0;
+            .carousel-item-title{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .about-us__name{
+                    @include m-regular(14px);
+                    text-transform: uppercase;
+                    display:block;
+                    margin: 17.5px 0px 9px 7px;
+                }
+                .about-us__job{
+                    @include r-regular(13px);
+                    display:block;
+                }
+            }
+            .carousel__mask{
+                position: absolute;
+                top: 0;
+                width: 263px;
+                height: 250px;
+                background: rgba(85, 85, 85, 0.5);;
+                opacity: 0;
+                .mask__social{
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 190px 75px 0;
+                    .mask__social__img{
+                        width: 28px;
+                        height: 28px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .mask__social__img:hover{
+                        transition: 1s;
+                        background-color: #c0301c;
+                    }
+                }
+            }
+        }
+        .carousel-item:hover .carousel__mask{
+            transition: 0.6s;
+            opacity: 1;
+        }
+    }
+}
+@media (max-width: 767px){
+    .about-us-textblock{
+        flex-direction: column;
+        align-items: center;
+        .about-us__textblock{
+            max-width: 100% !important;
+            margin-bottom: 20px;
+        }
+    }
+}

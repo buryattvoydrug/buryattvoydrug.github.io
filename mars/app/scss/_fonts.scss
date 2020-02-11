@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap');
+@mixin m-bold($fontSize){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: $fontSize;
+    color: #555555;
+}
+@mixin m-regular($fontSize){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $fontSize;
+    color: #555555;
+}
+@mixin r-bold($fontSize){
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: $fontSize;
+    color: #555555;
+}
+@mixin r-regular($fontSize){
+    font-family: 'Roboto Slab', serif;
+    font-size: $fontSize;
+    color: #555555;
+}
+@mixin r-italic($fontSize){
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-size: $fontSize;
+    color: #555555;
+}
