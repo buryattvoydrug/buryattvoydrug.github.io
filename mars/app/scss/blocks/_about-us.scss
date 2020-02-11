@@ -13,6 +13,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .carousel-item{
+            width: 263px !important;
+            margin: 0 11px;
             .carousel-item-title{
                 display: flex;
                 flex-direction: column;
