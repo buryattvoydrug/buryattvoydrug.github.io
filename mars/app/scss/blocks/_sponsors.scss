@@ -1,0 +1,31 @@
+.sponsors{
+    padding: 0 0 153px;
+    .sponsors-block{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 98px 0 68px;
+    }
+    .sponsors-carousel{
+        max-width: 770px;
+        margin: 0 auto;
+        .sponsors-carousel__item{
+            max-width: 770px;
+            .sponsors__text{
+                display: block;
+                @include r-italic(18px);
+                line-height: 30px;
+                text-align: center;
+            }
+            .sponsors__title{
+                padding-top: 30px;
+                display: block;
+                text-align: center;
+                @include r-regular(20px);
+            }
+        }
+    }
+}

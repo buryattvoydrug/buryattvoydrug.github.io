@@ -4,4 +4,10 @@ $(document).ready(function(){
             dots: false,
             variableWidth: true
         });
+        $('.sponsors-carousel').slick({
+            slidesToShow: 1,
+            dots: true,
+            arrows: false,
+            variableWidth: true
+        });
 });
