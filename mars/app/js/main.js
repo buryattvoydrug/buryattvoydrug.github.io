@@ -35,4 +35,7 @@ $(document).ready(function(){
             }
             $('.latest-works-block').css('justify-content','space-around');
         });
+        $('.toggler__nav').on('click', function(){
+            $('.nav').toggleClass('nav_active');
+        });
 });

@@ -5,12 +5,13 @@
 //npm install gulp-rename --save-dev
 //npm i gulp-sourcemaps
 //npm i gulp-autoprefixer
+//npm install gulp-tinypng-compress
 var gulp=require('gulp');
 var sass=require('gulp-sass');
 var rename=require('gulp-rename');
 var sourcemaps=require('gulp-sourcemaps');
 var autoprefixer=require('gulp-autoprefixer');
-//var tinypng = require('gulp-tinypng-compress');
+var tinypng = require('gulp-tinypng-compress');
 var browserSync = require('browser-sync').create();
 function sass_(){
   return gulp.src('app/scss/style.scss')
@@ -47,11 +48,11 @@ function browserSync_(){
     });
 }
 gulp.task('default', gulp.parallel(browserSync_, watch_));
-//gulp.task('tinypng', function (done) {
-//    gulp.src('app/images/**/*.{png,jpg,jpeg}')
-//        .pipe(tinypng({
-//            key: 'Nn7kY1VBppp1CwmKXKP8cXyhtbLKqHxC'
-//        }))
-//        .pipe(gulp.dest('app/img'));
-//    done();
-//});
+gulp.task('tinypng', function (done) {
+    gulp.src('app/images/**/*.{png,jpg,jpeg}')
+        .pipe(tinypng({
+            key: 'Nn7kY1VBppp1CwmKXKP8cXyhtbLKqHxC'
+        }))
+        .pipe(gulp.dest('app/img'));
+    done();
+});

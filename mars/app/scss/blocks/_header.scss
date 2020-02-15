@@ -39,6 +39,12 @@ header{
     .header{
         max-height: 100vh;
         overflow-y: hidden;
+        .navbar{
+            .toggler__nav,
+            .navbar__logo{
+                z-index: 3;
+            }
+        }
     }
     .nav{
         flex-direction: column;
@@ -46,13 +52,16 @@ header{
         top: 0;
         left: 0;
         width: 100% !important;
-        padding: 50px;
-        background: rgba(122, 108, 93, 0.95);;
+        padding: 100px 50px;
+        background: rgba(122, 108, 93, 0.95);
         transition: 0.4s;
         transform: translateY(-100%);
         .nav__item{
             padding: 7px;
         }
+    }
+    .nav_active{
+        transform: translateY(0);
     }
 }
 
