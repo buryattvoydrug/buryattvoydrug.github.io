@@ -10,4 +10,8 @@ $(document).ready(function(){
             arrows: false,
             variableWidth: true
         });
+        $('a[href^="#"]').on('click', function(){
+            var _href=$(this).attr("href");
+            $('html,body').animate({ scrollTop: $(_href).offset().top -0 + "px" });
+        });
 });

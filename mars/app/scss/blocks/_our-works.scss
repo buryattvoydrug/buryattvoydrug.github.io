@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     background: url(../images/our-works/bg-w.jpg);
+    background-size: cover;
     .our-works__title{
         @include r-regular(30px);
         color: #fff;
@@ -23,5 +24,10 @@
         border-radius: 2px;
         border: 2px solid #ffffff;
         margin-top: 43px;
+    }
+}
+@media (max-width:767px){
+    .our-works__title{
+        padding: 0 30px;
     }
 }

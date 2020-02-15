@@ -8,18 +8,18 @@
 </head>
 <body>
     <header>
-        <div class="container header">
+        <div class="container header" id="nav-0">
             <div class="navbar">
                 <div class="navbar__logo">Startup</div>
                 <div class="toggler__nav"><img src="images/header/nav-icon.png" alt=""></div>
                 <div class="nav">
-                    <div class="nav__item"><a href="">Home</a></div>
-                    <div class="nav__item"><a href="">Services</a></div>
-                    <div class="nav__item"><a href="">About</a></div>
-                    <div class="nav__item"><a href="">Works</a></div>
-                    <div class="nav__item"><a href="">Blog</a></div>
-                    <div class="nav__item"><a href="">Clients</a></div>
-                    <div class="nav__item"><a href="">Contact</a></div>
+                    <div class="nav__item"><a href="#nav-0">Home</a></div>
+                    <div class="nav__item"><a href="#nav-1">Services</a></div>
+                    <div class="nav__item"><a href="#nav-2">About</a></div>
+                    <div class="nav__item"><a href="#nav-3">Works</a></div>
+                    <div class="nav__item"><a href="#nav-4">Blog</a></div>
+                    <div class="nav__item"><a href="#nav-5">Clients</a></div>
+                    <div class="nav__item"><a href="#nav-6">Contact</a></div>
                 </div>
             </div>
             <div class="header-block">
@@ -31,7 +31,7 @@
     </header>
     <main>
         <section class="section">
-            <div class="container service">
+            <div class="container service" id="nav-1">
                 <div class="section-title">
                     <h2 class="section__title">Services</h2>
                     <div class="title__row"></div>
@@ -57,7 +57,7 @@
             </div>
         </section>
         <section class="section section_darker">
-            <div class="container about-us">
+            <div class="container about-us" id="nav-2">
                 <div class="section-title">
                     <h2 class="section__title">About us</h2>
                     <div class="title__row"></div>
@@ -187,7 +187,7 @@
             </div>
         </section>
         <section class="section">
-            <div class="container latest-works">
+            <div class="container latest-works"  id="nav-3">
                 <div class="section-title">
                     <h2 class="section__title">Latest Works</h2>
                     <div class="title__row"></div>
@@ -311,7 +311,7 @@
             </div>
         </section>
         <section class="section">
-            <div class="posts container">
+            <div class="posts container"  id="nav-4">
                 <div class="section-title">
                     <h2 class="section__title">Recent blog posts</h2>
                     <div class="title__row"></div>
@@ -319,13 +319,16 @@
                 </div>
                 <div class="posts-block">
                     <div class="post__item">
-                        <div class="post__img"></div>
+                        <div class="post__img"><img src="images/blog/blog-1-img.jpg" alt="a"></div>
                         <div class="post-main">
                             <div class="post-title">
-                                <div class="post__date"></div>
-                                <div class="post__title">
-                                    <h4>Startup ideas needs to be funded</h4>
-                                    <span class="post__author">By Khalil Uddin in Development </span>
+                                <div class="post__date">
+                                    <span class="post-date__day">18</span>
+                                    <span class="post-date__month">oct</span>
+                                </div>
+                                <div class="post-title-text">
+                                    <h4 class="post__title"><strong>Startup ideas needs to be funded </strong></h4>
+                                    <span class="post__author">By <strong>Khalil</strong> Uddin in <strong>Development </strong></span>
                                 </div>
                             </div>
                             <div class="post__text">
@@ -334,11 +337,29 @@
                             <div class="post__button">READ MORE</div>
                         </div>
                     </div>
-                    <div class="post__item"></div>
+                    <div class="post__item">
+                        <div class="post__img"><img src="images/blog/blog-2-img.jpg" alt="aa"></div>
+                        <div class="post-main">
+                            <div class="post-title">
+                                <div class="post__date">
+                                    <span class="post-date__day">18</span>
+                                    <span class="post-date__month">oct</span>
+                                </div>
+                                <div class="post-title-text">
+                                    <h4 class="post__title">User Interface Designing Elements </h4>
+                                    <span class="post__author">By Khalil Uddin in Development </span>
+                                </div>
+                            </div>
+                            <div class="post__text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam
+                            </div>
+                            <div class="post__button">READ MORE</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section section_darker">
+        <section class="section section_darker"  id="nav-5">
             <div class="sponsors container">
                 <div class="sponsors-block">
                     <div class="sponsors__img"><img src="images/sponsors/img-1.png" alt=""></div>
@@ -363,6 +384,49 @@
             </div>
         </div>
         </section>
+        <section class="section">
+            <div class="container get-in-touch"  id="nav-6">
+                <div class="section-title">
+                    <h2 class="section__title">Get in touch</h2>
+                    <div class="title__row"></div>
+                    <span class="section__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</span>
+                </div>
+                <div class="touch-block">
+                    <div class="touch__contacts">
+                        <div class="contacts__item contact__address">
+                            <span class="contact__title">Address</span>
+                            <img src="images/get-in-touch/fa-map-marker.png" alt="" class="contact-title__icon">
+                            <address class="contact__address">
+                                312, 7th Ave, New York <br>
+                                NY 101200, United States of America
+                            </address>
+                        </div>
+                        <div class="contacts__item contact__hotline">
+                            <span class="contact__title">Hotline (24x7)</span>
+                            <img src="images/get-in-touch/fa-mobile-phone.png" alt="" class="contact-title__icon">
+                            <span contact__phone><a class="contact__phone" href="tel:+65 0052 300">+65 0052 300</a>, <a class="contact__phone" href="tel:+65 88251 210">+65 88251 210</a><br><a class="contact__phone" href="tel:+88 01723 511 340">+88 01723 511 340</a></span>
+                        </div>
+                        <div class="contacts__item contact__mail">
+                            <span class="contact__title">E-mail</span>
+                            <img src="images/get-in-touch/fa-envelope-o.png" alt="" class="contact-title__icon">
+                            <a class="contact__email" href="mailto:shapedtheme@gmail.com">shapedtheme@gmail.com</a>
+                            <a class="contact__email" href="mailto:khalilkode@gmail.com">khalilkode@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="touch-form">
+                        <form action="" class="touch__form" method="post">
+                            <input class="form__input" name="name" type="text" placeholder="your name">
+                            <input class="form__input" name="email" type="text" placeholder="your e-mail">
+                            <input class="form__input" name="subject" type="text" placeholder="Your subject">
+                            <input class="form__input" name="company" type="text" placeholder="Company name">
+                            <textarea class="form__input form__textarea" name="message" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
+                            <button type="submit" class="send__button">Send message</button>
+                            <span class="red__star"><strong>*</strong> We’ll contact you as as possible. We don’t reply on Monday.</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container footer">
@@ -386,8 +450,9 @@
             <copyright class="footer__copyright">© 2015 Startup, Designed by ShapedTheme</copyright>
         </div>
     </footer>
-    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
