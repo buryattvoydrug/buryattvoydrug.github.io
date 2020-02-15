@@ -10,7 +10,7 @@
     <header>
         <div class="container header" id="nav-0">
             <div class="navbar">
-                <div class="navbar__logo">Startup</div>
+                <div class="navbar__logo"><a href="#">Startup</a></div>
                 <div class="toggler__nav"><img src="images/header/nav-icon.png" alt=""></div>
                 <div class="nav">
                     <div class="nav__item"><a href="#nav-0">Home</a></div>
@@ -25,7 +25,7 @@
             <div class="header-block">
                 <h1 class="header__title">Welcome to STARTUP</h1>
                 <span class="header__subtitle">Your Favourite Creative Agency Template</span>
-                <div class="button">get started</div>
+                <div class="button"><a href="#nav-1">get started</a></div>
             </div>
         </div>
     </header>
@@ -193,11 +193,11 @@
                     <div class="title__row"></div>
                     <div class="section__subtitle">
                         <div class="latest-works__filter">
-                            <span class="l-w__category all">All</span>
-                            <span class="l-w__category branding">Branding</span>
-                            <span class="l-w__category design">Design</span>
-                            <span class="l-w__category development">Development</span>
-                            <span class="l-w__category stradegy">Stradegy</span>
+                            <span data-filter="all" class="l-w__category">All</span>
+                            <span data-filter="branding" class="l-w__category">Branding</span>
+                            <span data-filter="design" class="l-w__category">Design</span>
+                            <span data-filter="development" class="l-w__category">Development</span>
+                            <span data-filter="stradegy" class="l-w__category">Stradegy</span>
                         </div>
                     </div>
                 </div>
@@ -307,7 +307,7 @@
         <section class="section">
             <div class="our-works">
                 <span class="our-works__title">Do you like OUR WORK so far? Let's talk about YOUR PROJECT!</span>
-                <div class="our-works__button">Get in Touch</div>
+                <div class="our-works__button"><a href="#nav-6">Get in touch</a></div>
             </div>
         </section>
         <section class="section">
@@ -414,7 +414,7 @@
                         </div>
                     </div>
                     <div class="touch-form">
-                        <form action="" class="touch__form" method="post">
+                        <form action="php/index.php" class="touch__form" method="post">
                             <input class="form__input" name="name" type="text" placeholder="your name">
                             <input class="form__input" name="email" type="text" placeholder="your e-mail">
                             <input class="form__input" name="subject" type="text" placeholder="Your subject">

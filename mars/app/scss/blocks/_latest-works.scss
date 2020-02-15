@@ -5,6 +5,8 @@
     width: 416px;
     .l-w__category{
         display: block;
+        cursor: pointer;
+        transition: 0.5s;
     }
 }
 .latest-works-block{

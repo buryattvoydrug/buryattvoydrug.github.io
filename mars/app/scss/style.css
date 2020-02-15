@@ -91,6 +91,7 @@ p {
 
 /* line 50, /home/buryattvoydrug/Работа/mars/app/scss/_interface.scss */
 .button {
+  cursor: pointer;
   width: 180px;
   height: 50px;
   border-radius: 2px;
@@ -105,11 +106,11 @@ p {
   color: #fff; }
 
 @media (max-width: 767px) {
-  /* line 66, /home/buryattvoydrug/Работа/mars/app/scss/_interface.scss */
+  /* line 67, /home/buryattvoydrug/Работа/mars/app/scss/_interface.scss */
   .toggler__nav {
     display: block;
     filter: invert(100%); }
-    /* line 69, /home/buryattvoydrug/Работа/mars/app/scss/_interface.scss */
+    /* line 70, /home/buryattvoydrug/Работа/mars/app/scss/_interface.scss */
     .toggler__nav img {
       height: 30px; } }
 
@@ -309,36 +310,39 @@ p {
   .slick-dots li {
     position: relative;
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 13px;
+    width: 13px;
     margin: 0 5px;
     padding: 0;
     cursor: pointer; }
     /* line 256, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
     .slick-dots li button {
       border: 0;
-      background: transparent;
+      transition: 0.4s;
+      background: #dddddd;
       display: block;
-      height: 20px;
-      width: 20px;
+      height: 13px;
+      width: 13px;
+      border-radius: 100px;
       outline: none;
       line-height: 0px;
       font-size: 0px;
       color: transparent;
       padding: 5px;
       cursor: pointer; }
-      /* line 268, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
+      /* line 270, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
       .slick-dots li button:hover, .slick-dots li button:focus {
-        outline: none; }
-        /* line 270, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
+        outline: none;
+        transition: 0.7s;
+        background: #c0301c; }
+        /* line 274, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
         .slick-dots li button:hover:before, .slick-dots li button:focus:before {
           opacity: 1; }
-      /* line 274, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
+      /* line 278, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
       .slick-dots li button:before {
         position: absolute;
         top: 0;
         left: 0;
-        content: "•";
         width: 20px;
         height: 20px;
         font-family: "slick";
@@ -349,8 +353,9 @@ p {
         opacity: 0.25;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
-    /* line 291, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
+    /* line 294, /home/buryattvoydrug/Работа/mars/app/scss/_slick.scss */
     .slick-dots li.slick-active button:before {
+      background: #c0301c;
       color: black;
       opacity: 0.75; }
 
@@ -543,19 +548,21 @@ header {
   width: 416px; }
   /* line 6, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
   .latest-works__filter .l-w__category {
-    display: block; }
+    display: block;
+    cursor: pointer;
+    transition: 0.5s; }
 
-/* line 10, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+/* line 12, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
 .latest-works-block {
   padding-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  /* line 15, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+  /* line 17, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
   .latest-works-block .latest-work__item {
     position: relative;
     margin-bottom: 30px; }
-  /* line 19, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+  /* line 21, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
   .latest-works-block .latest-work__mask {
     padding-top: 107px;
     position: absolute;
@@ -567,20 +574,20 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    /* line 30, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+    /* line 32, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
     .latest-works-block .latest-work__mask .mask__title {
       font-family: 'Montserrat', sans-serif;
       font-size: 18px;
       color: #555555;
       color: #fff; }
-    /* line 34, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+    /* line 36, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
     .latest-works-block .latest-work__mask .mask__category {
       font-family: 'Roboto Slab', serif;
       font-size: 12px;
       color: #555555;
       color: #fff;
       padding: 9px 0 24px; }
-    /* line 39, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+    /* line 41, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
     .latest-works-block .latest-work__mask .mask__button {
       width: 100px;
       height: 38px;
@@ -589,37 +596,37 @@ header {
       align-items: center;
       justify-content: space-between;
       padding: 0 19px; }
-      /* line 47, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+      /* line 49, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
       .latest-works-block .latest-work__mask .mask__button span {
         font-family: 'Roboto Slab', serif;
         font-size: 14px;
         color: #555555;
         color: #c0301c;
         letter-spacing: 1.4px; }
-  /* line 54, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+  /* line 56, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
   .latest-works-block .latest-work__mask:hover {
     transition: 0.7s;
     opacity: 1; }
 
 @media (max-width: 1199px) {
-  /* line 60, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+  /* line 62, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
   .latest-works {
     padding: 0 !important; }
-  /* line 63, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+  /* line 65, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
   .latest-works-block {
     justify-content: center; }
-    /* line 65, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+    /* line 67, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
     .latest-works-block .latest-work__item {
       margin: 10px 10px 30px; } }
 
 @media (max-width: 767px) {
-  /* line 71, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+  /* line 73, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
   .latest-works-block {
     justify-content: center; }
-    /* line 73, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+    /* line 75, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
     .latest-works-block .latest-work__item {
       margin: 30px 0; }
-  /* line 77, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
+  /* line 79, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_latest-works.scss */
   .latest-works__filter {
     width: 200px; } }
 
@@ -629,8 +636,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(../images/our-works/bg-w.jpg); }
-  /* line 7, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_our-works.scss */
+  background: url(../images/our-works/bg-w.jpg);
+  background-size: cover; }
+  /* line 8, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_our-works.scss */
   .our-works .our-works__title {
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
@@ -639,7 +647,7 @@ header {
     text-align: center;
     line-height: 44px;
     max-width: 460px; }
-  /* line 14, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_our-works.scss */
+  /* line 15, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_our-works.scss */
   .our-works .our-works__button {
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
@@ -655,14 +663,313 @@ header {
     border: 2px solid #ffffff;
     margin-top: 43px; }
 
-/* line 2, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
-.sponsors .sponsors-block {
+@media (max-width: 767px) {
+  /* line 30, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_our-works.scss */
+  .our-works__title {
+    padding: 0 30px; } }
+
+/* line 2, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+.posts strong {
+  color: #c0301c; }
+
+/* line 6, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+.posts .section-title .section__title {
+  margin-top: 90px; }
+
+/* line 9, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+.posts .section-title .section__subtitle {
+  margin-bottom: 31px; }
+
+/* line 13, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+.posts .posts-block {
+  margin-bottom: 63px; }
+  /* line 15, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+  .posts .posts-block .post__item {
+    padding: 38px 0;
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 19, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+    .posts .posts-block .post__item .post__img {
+      max-width: 460px;
+      height: 322px;
+      margin: 0 38px 0 0; }
+    /* line 24, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+    .posts .posts-block .post__item .post-main {
+      max-width: 640px; }
+      /* line 26, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+      .posts .posts-block .post__item .post-main .post-title {
+        display: flex; }
+        /* line 28, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+        .posts .posts-block .post__item .post-main .post-title .post__date {
+          margin-right: 28px;
+          padding: 17px 0 0 5px;
+          align-items: center;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          color: #555555;
+          color: #777777;
+          width: 76px;
+          height: 76px;
+          border: 2px solid #555555;
+          line-height: 20px;
+          text-transform: uppercase;
+          letter-spacing: 1.4px;
+          text-align: center; }
+          /* line 41, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+          .posts .posts-block .post__item .post-main .post-title .post__date .post-date__day {
+            font-size: 24px;
+            letter-spacing: 2.4px; }
+        /* line 47, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+        .posts .posts-block .post__item .post-main .post-title .post-title-text .post__title {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          color: #555555;
+          line-height: 24px;
+          text-transform: uppercase;
+          margin: 9px 0 7px; }
+        /* line 53, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+        .posts .posts-block .post__item .post-main .post-title .post-title-text .post__author {
+          font-family: 'Roboto Slab', serif;
+          font-style: italic;
+          font-size: 13px;
+          color: #555555;
+          line-height: 24px; }
+      /* line 59, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+      .posts .posts-block .post__item .post-main .post__text {
+        font-family: 'Roboto Slab', serif;
+        font-size: 14px;
+        color: #555555;
+        line-height: 24px;
+        margin: 17.5px 3px 26px; }
+      /* line 64, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+      .posts .posts-block .post__item .post-main .post__button {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        font-size: 13px;
+        color: #555555;
+        letter-spacing: 1.3px;
+        text-transform: uppercase; }
+      /* line 69, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+      .posts .posts-block .post__item .post-main .post__button:hover {
+        cursor: pointer;
+        transition: 0.7s;
+        color: #cf6252; }
+  /* line 76, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+  .posts .posts-block .post__item:nth-last-child(2) {
+    border-bottom: 1px solid #dddddd; }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* line 82, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+  .posts-block {
+    margin: 0 20%; }
+  /* line 85, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+  .post__img {
+    margin-bottom: 30px !important; } }
+
+@media (max-width: 767px) {
+  /* line 90, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+  .section__subtitle {
+    text-align: center; }
+  /* line 93, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_blog.scss */
+  .post__img {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px !important; } }
+
+/* line 1, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+.sponsors {
+  padding: 0 0 126px; }
+  /* line 3, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+  .sponsors .sponsors-block {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 98px 0 57.5px; }
+  /* line 12, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+  .sponsors .sponsors-carousel {
+    max-width: 770px;
+    margin: 0 auto;
+    padding-bottom: 28.5px; }
+    /* line 16, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+    .sponsors .sponsors-carousel .sponsors-carousel__item {
+      max-width: 770px; }
+      /* line 18, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+      .sponsors .sponsors-carousel .sponsors-carousel__item .sponsors__text {
+        display: block;
+        font-family: 'Roboto Slab', serif;
+        font-style: italic;
+        font-size: 18px;
+        color: #555555;
+        line-height: 30px;
+        text-align: center; }
+      /* line 24, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+      .sponsors .sponsors-carousel .sponsors-carousel__item .sponsors__title {
+        padding-top: 30px;
+        display: block;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        color: #555555; }
+
+@media (max-width: 767px) {
+  /* line 34, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+  .sponsors-block {
+    justify-content: space-around !important; }
+    /* line 36, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+    .sponsors-block .sponsors__img {
+      margin: 5px 10px; }
+  /* line 40, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+  .sponsors-carousel {
+    max-width: 350px !important; }
+    /* line 42, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_sponsors.scss */
+    .sponsors-carousel .sponsors-carousel__item {
+      max-width: 350px !important; } }
+
+/* line 1, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+.touch-block {
   display: flex;
   flex-wrap: wrap;
-  max-width: 900px;
-  margin: 0 auto;
   justify-content: space-between;
-  align-items: center;
-  padding: 98px 0 68px; }
+  margin-bottom: 99px; }
+  /* line 6, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+  .touch-block .touch__contacts {
+    display: flex;
+    flex-direction: column; }
+    /* line 9, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+    .touch-block .touch__contacts .contacts__item {
+      padding-left: 27px;
+      width: 245px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 28px; }
+      /* line 16, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+      .touch-block .touch__contacts .contacts__item .contact__title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #555555;
+        line-height: 14px;
+        text-transform: uppercase;
+        line-height: 24px;
+        color: #555555;
+        margin: 0 0 8px; }
+      /* line 24, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+      .touch-block .touch__contacts .contacts__item .contact-title__icon {
+        position: absolute;
+        left: -1px;
+        top: 3px; }
+      /* line 29, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+      .touch-block .touch__contacts .contacts__item .contact__address,
+      .touch-block .touch__contacts .contacts__item .contact__phone,
+      .touch-block .touch__contacts .contacts__item .contact__email {
+        font-family: 'Roboto Slab', serif;
+        font-size: 12px;
+        color: #555555;
+        line-height: 20px;
+        font-style: normal; }
+  /* line 38, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+  .touch-block .touch-form {
+    margin: 2px 15px;
+    max-width: 730px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    /* line 44, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+    .touch-block .touch-form .form__input {
+      margin: 0 0 21px 0;
+      width: 350px;
+      height: 44px;
+      border: none;
+      border: 1px solid #555555;
+      background: transparent;
+      padding: 0 0 0 17px;
+      font-family: 'Roboto Slab', serif;
+      font-size: 12px;
+      color: #555555;
+      text-transform: uppercase; }
+    /* line 55, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+    .touch-block .touch-form .form__input:active,
+    .touch-block .touch-form .form__input:focus {
+      outline: none;
+      border: 1px solid #c0301c; }
+    /* line 60, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+    .touch-block .touch-form .form__input:nth-child(2n-1):not(.form__textarea) {
+      margin-right: 26px; }
+    /* line 63, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+    .touch-block .touch-form .form__textarea {
+      padding-top: 12px;
+      width: 100%;
+      height: 104px;
+      resize: none; }
+    /* line 69, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+    .touch-block .touch-form .send__button {
+      margin-top: -4px;
+      width: 170px;
+      height: 44px;
+      border: 1px solid #555555;
+      background: transparent;
+      font-family: 'Roboto Slab', serif;
+      font-size: 12px;
+      color: #555555;
+      text-transform: uppercase;
+      margin-right: 35px;
+      cursor: pointer; }
+    /* line 80, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+    .touch-block .touch-form .red__star {
+      color: #555;
+      font-family: 'Roboto Slab', serif;
+      font-size: 12px;
+      color: #555555; }
+      /* line 83, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+      .touch-block .touch-form .red__star strong {
+        color: #c0301c; }
+
+@media (max-width: 767px) {
+  /* line 90, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+  .form__input {
+    width: 300px !important;
+    margin-right: 0 !important; }
+  /* line 94, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_touch.scss */
+  .red__star {
+    margin-top: 20px;
+    display: block; } }
+
+/* line 1, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_footer.scss */
+footer {
+  background: #c0301c;
+  padding: 100px 0; }
+  /* line 4, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_footer.scss */
+  footer .footer-social-block {
+    max-width: 182px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; }
+    /* line 9, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_footer.scss */
+    footer .footer-social-block .footer__img {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      border: 2px solid #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px; }
+  /* line 20, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_footer.scss */
+  footer .title__row {
+    background: #fff !important;
+    margin: 30px 0 30px; }
+  /* line 24, /home/buryattvoydrug/Работа/mars/app/scss/blocks/_footer.scss */
+  footer .footer__copyright {
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */
