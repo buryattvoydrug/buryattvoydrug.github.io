@@ -1,0 +1,150 @@
+@font-face {
+font-family: 'Arial Italic';
+src: url('../fonts/Arial-ItalicMT.eot');
+src: url('../fonts/Arial-ItalicMT.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Arial-ItalicMT.woff') format('woff'),
+url('../fonts/Arial-ItalicMT.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Arial Regular';
+src: url('../fonts/ArialMT.eot');
+src: url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+url('../fonts/ArialMT.woff') format('woff'),
+url('../fonts/ArialMT.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Georgia Regular';
+src: url('../fonts/Georgia.eot');
+src: url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Georgia.woff') format('woff'),
+url('../fonts/Georgia.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Times New Roman Regular';
+src: url('../fonts/TimesNewRomanPSMT.eot');
+src: url('../fonts/TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),
+url('../fonts/TimesNewRomanPSMT.woff') format('woff'),
+url('../fonts/TimesNewRomanPSMT.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@mixin ai($f-size) {
+    font-family: 'Arial Italic','serif';
+    font-size: $f-size;
+}
+@mixin ar($f-size) {
+    font-family: 'Arial Regular','serif';
+    font-size: $f-size;
+}
+@mixin gr($f-size) {
+    font-family: 'Georgia Regular','serif';
+    font-size: $f-size;
+}
+@mixin times($f-size) {
+    font-family: 'Times New Roman Regular','serif';
+    font-size: $f-size;
+}
+//навигация
+.nav__link{
+    @include ar(15px);
+    color: #cdcdcd;
+    line-height: 29px;
+}
+//h1
+.header__title{
+    @include gr(44px);
+    color: #fff;
+    letter-spacing: 2.64px;
+    line-height: 57px;
+}
+//h2
+.section__title{
+    @include gr(35px);
+    line-height: 45px;
+    letter-spacing: 2.1px;
+    color: #545454;
+    text-align: center;
+    .section__title_right{
+        text-align: left;
+    }
+}
+//p
+.article__text{
+    @include ar(15px);
+    color: #4c4c4c;
+    line-height: 24px;
+}
+//имена животных
+.pet__name{
+    @include gr(20px);
+    letter-spacing: 1.2px;
+    color: #545454;
+}
+//кнопки
+.button{
+    @include gr(17px);
+    letter-spacing: 1.02px;
+    color: #292929;
+}
+//мелкий шрифт при оплате
+.bank__text{
+    @include ar(12px);
+    line-height: 18px;
+    color: #b2b2b2;
+}
+.card__title{
+    @include gr(15px);
+    letter-spacing: 0.9px;
+    color: #545454;
+}
+.card__number{
+    @include times(20px);
+    color: #292929;
+}
+//footer
+.footer__title{
+    @include gr(35px);
+    line-height: 45px;
+    letter-spacing: 2.1px;
+    color: #fff;
+}
+.footer__text{
+    @include times(20px);
+    line-height: 45px;
+    letter-spacing: 2.1px;
+    color: #f1cdb3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

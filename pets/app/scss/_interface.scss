@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.button{
+    padding: 16px 43px 21px;
+    width: 205px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #f1cdb3;
+}
