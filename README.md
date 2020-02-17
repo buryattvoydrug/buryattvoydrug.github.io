@@ -1,4 +1,6 @@
 # Мои работы
+[pets](https://buryattvoydrug.github.io/pets/app/)
+
 [mars](https://buryattvoydrug.github.io/mars/app/)
 
 [surface](https://buryattvoydrug.github.io/surface/)
