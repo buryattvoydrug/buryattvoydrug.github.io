@@ -1,0 +1,19 @@
+.help-section{
+    background: #fafafa;
+    .help{
+        .help-block{
+            padding: 0 200px;
+            display: flex;
+            flex-wrap: wrap;
+            .help__item{
+                .pet__name{
+                    display: block;
+                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+            }
+        }
+    }
+}

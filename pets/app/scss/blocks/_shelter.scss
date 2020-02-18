@@ -1,0 +1,18 @@
+.shelter-section{
+    padding: 89px 0;
+    background: #fafafa;
+    .shelter{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .shelter-block{
+            max-width: 420px;
+            .section__title{
+                max-width: 330px;
+            }
+        }
+        .shelter__img{
+            padding-right: 120px;
+        }
+    }
+}

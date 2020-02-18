@@ -1,0 +1,24 @@
+.donation-section{
+    padding: 89px 0;
+    background: #fafafa;
+    .donation{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .donation-block{
+            max-width: 420px;
+            .section__title{
+                max-width: 330px;
+            }
+            .card{
+                width: 319px;
+                height: 47px;
+                border-radius: 9px;
+                background-color: #f1cdb3;
+            }
+        }
+        .shelter__img{
+            padding-right: 120px;
+        }
+    }
+}

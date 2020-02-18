@@ -43,3 +43,12 @@
         }
     }
 }
+@media (min-width: 768px) and (max-width:1200px){
+    .header-section{
+        background: url(../images/header/header-img.png) right -350px  bottom 0 no-repeat,
+        url(../images/header/bg-img.png) no-repeat;
+        .header-block{
+            margin-left: 10% !important;
+        }
+    }
+}

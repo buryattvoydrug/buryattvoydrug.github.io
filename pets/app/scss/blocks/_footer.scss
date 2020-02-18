@@ -1,0 +1,20 @@
+.footer-section{
+    background: url(../images/footer/footer-img.png) right 0 bottom 0 no-repeat,
+        url(../images/footer/footer-bg.png) no-repeat;
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        .footer-block{
+            max-width: 280px;
+            .footer__contact{
+                .contact__item{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .footer-block:nth-child(1){
+            margin-right: 170px;
+        }
+    }
+}
