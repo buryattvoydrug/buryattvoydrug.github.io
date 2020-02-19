@@ -6,13 +6,13 @@
         justify-content: center;
         flex-wrap: wrap;
         .shelter-block{
-            max-width: 420px;
+            max-width: 427px;
             .section__title{
                 max-width: 330px;
             }
         }
         .shelter__img{
-            padding-right: 120px;
+            margin: 0 120px 0 10px;
         }
     }
 }

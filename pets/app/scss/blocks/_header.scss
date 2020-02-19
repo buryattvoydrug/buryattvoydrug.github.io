@@ -1,6 +1,9 @@
 .header-section{
-    background: url(../images/header/header-img.png) right 0 bottom 0 no-repeat,
-        url(../images/header/bg-img.png) no-repeat;
+    background: url(../images/header/bg-img.png) no-repeat;
+    background-size: cover;
+    .header__dog{
+        background: url(../images/header/header-img.png) right 0 bottom 0 no-repeat;
+    }
     .header{
         .navbar{
             padding: 52px 0 0;

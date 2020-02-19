@@ -1,6 +1,9 @@
 .footer-section{
-    background: url(../images/footer/footer-img.png) right 0 bottom 0 no-repeat,
-        url(../images/footer/footer-bg.png) no-repeat;
+    background: url(../images/footer/footer-bg.png) no-repeat;
+    background-size: cover;
+    .footer__dog{
+        background: url(../images/footer/footer-img.png) right 0 bottom 0 no-repeat;
+    }
     .footer{
         display: flex;
         flex-wrap: wrap;
