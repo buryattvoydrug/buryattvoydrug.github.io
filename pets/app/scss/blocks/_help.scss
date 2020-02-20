@@ -1,18 +1,24 @@
 .help-section{
     background: #fafafa;
     .help{
+        .section__title{
+            max-width: 350px;
+            margin: 0 auto;
+        }
         .help-block{
-            padding: 0 200px;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             .help__item{
+                width: 170px;
                 .pet__name{
                     display: block;
+                    margin-top: 25px;
                 }
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 40px 20px;
+                margin: 0 30px 80px;
             }
         }
     }

@@ -1,24 +1,35 @@
 .donation-section{
-    padding: 89px 0;
+    padding: 35px 0 80px;
     background: #fafafa;
     .donation{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         .donation-block{
-            max-width: 420px;
+            max-width: 570px;
+            padding-right: 205px;
             .section__title{
-                max-width: 330px;
+                max-width: 361px;
+                margin: 24px 0 20px;
+            }
+            .card__title{
+                margin-left: 3px;
             }
             .card{
                 width: 319px;
                 height: 47px;
+                margin: 14px 0 30px 4px;
                 border-radius: 9px;
                 background-color: #f1cdb3;
+                display: flex;
+                align-items: center;
+                .card__img{
+                    padding: 0 15px 0 13px;
+                }
             }
         }
-        .shelter__img{
-            padding-right: 120px;
+        .donation__img{
+            padding: 45px 60px 0 0;
         }
     }
 }

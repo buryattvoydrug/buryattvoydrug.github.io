@@ -1,23 +1,33 @@
 .footer-section{
     background: url(../images/footer/footer-bg.png) no-repeat;
     background-size: cover;
-    .footer__dog{
-        background: url(../images/footer/footer-img.png) right 0 bottom 0 no-repeat;
+    .footer{
+        background: url(../images/footer/footer-img.png) right 36px bottom 0 no-repeat;
+        padding-bottom: 45px;
     }
     .footer{
         display: flex;
         flex-wrap: wrap;
         .footer-block{
+            margin: 71px 0 0;
             max-width: 280px;
             .footer__contact{
+                margin-top: 27px;
                 .contact__item{
+                    margin-bottom: 20px;
                     display: flex;
                     align-items: center;
+                    .contact__icon{
+                        padding-right: 22px;
+                    }
                 }
             }
         }
         .footer-block:nth-child(1){
             margin-right: 170px;
+        }
+        .footer-block:nth-child(2){
+            max-width: 300px;
         }
     }
 }
