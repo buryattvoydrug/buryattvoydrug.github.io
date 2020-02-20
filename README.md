@@ -15,6 +15,3 @@
 
 
 [gohub](https://buryattvoydrug.github.io/gohub/)
-
-
-[buisiness](https://buryattvoydrug.github.io/buisiness/)
