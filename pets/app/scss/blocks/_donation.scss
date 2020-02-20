@@ -33,3 +33,26 @@
         }
     }
 }
+@media (max-width:1200px){
+    .donation-section{
+        .donation{
+            .donation-block{
+                max-width: 400px;
+                padding-right: 0;
+                .card{
+                    .card__img{
+                        padding: 0 15px 0 13px;
+                    }
+                }
+            }
+            .donation__img{
+                padding: 45px 0 0 0;
+            }
+        }
+    }
+}
+@media (max-width:500px){
+    .donation__img img{
+        width: 100% !important;
+    }
+}

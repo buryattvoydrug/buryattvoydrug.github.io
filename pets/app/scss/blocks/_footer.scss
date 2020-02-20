@@ -31,3 +31,24 @@
         }
     }
 }
+@media (max-width:1200px){
+    .footer-section{
+        background: url(../images/footer/footer-bg.png) no-repeat;
+        background-size: cover;
+        .footer{
+            background: none;
+            padding-bottom: 45px;
+        }
+        .footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .footer-block:nth-child(1){
+                margin-right: 0;
+            }
+            .footer-block:nth-child(2){
+                max-width: 300px;
+            }
+        }
+    }
+}

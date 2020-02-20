@@ -16,11 +16,14 @@
                     <span class="bottom__logo">Shelter for pets in Boston</span>
                 </div>
                 <div class="navbar__nav">
-                    <a class="nav__link" href="">About the shelter</a>
-                    <a class="nav__link" href="">Our pets</a>
-                    <a class="nav__link" href="">To help the shelter</a>
-                    <a class="nav__link" href="">Contacts</a>
+                    <a class="nav__link" href="#shelter">About the shelter</a>
+                    <a class="nav__link" href="#pets">Our pets</a>
+                    <a class="nav__link" href="#help">To help the shelter</a>
+                    <a class="nav__link" href="#contacts">Contacts</a>
                 </div>
+                <a class="navbar__link" href="#">
+                    <span></span>
+                </a>
             </div>
             <div class="header-block">
                 <h1 class="header__title">Not only people need a house</h1>
@@ -31,7 +34,7 @@
         </div>
     </header>
     <main>
-        <section class="shelter-section">
+        <section class="shelter-section" id="shelter">
             <div class="container shelter">
                 <div class="shelter__img">
                     <img src="images/shelter/shelter-img.png" alt="">
@@ -43,7 +46,7 @@
                 </div>
             </div>
         </section>
-        <section class="our-friend-section">
+        <section class="our-friend-section" id="pets">
             <div class="container our-friends">
                 <h2 class="section__title">Our friends who <br>are looking for a house</h2>
                 <div class="our-friends-block">
@@ -66,7 +69,7 @@
                 <div class="button"><a href="">Get to know the rest</a></div>
             </div>
         </section>
-        <section class="help-section">
+        <section class="help-section" id="help">
             <div class="container help">
                 <h2 class="section__title">Than you can help our shelter</h2>
                 <div class="help-block">
@@ -99,7 +102,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer-section">
+    <footer class="footer-section" id="contacts">
         <div class="container footer">
             <div class="footer-block">
                 <h2 class="footer__title">For questions and suggestions</h2>
@@ -129,5 +132,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
