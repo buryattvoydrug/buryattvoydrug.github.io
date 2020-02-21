@@ -1,5 +1,5 @@
 # Мои работы
-[pets](https://buryattvoydrug.github.io/pets/app/index.html)
+[pets](https://buryattvoydrug.github.io/pets/app/)
 
 [mars](https://buryattvoydrug.github.io/mars/app/)
 
