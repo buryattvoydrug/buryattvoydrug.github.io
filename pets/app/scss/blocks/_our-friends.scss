@@ -14,6 +14,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin: 0 25px;
                 .friend__img{
                     height: 270px;
                     display: flex;
@@ -38,5 +39,16 @@
             margin: 64px auto 0;
             width: 267px;
         }
+    }
+}
+@media(max-width:767px){
+    .our-friends-block{
+        width: 270px;
+    }
+}
+@media(min-width:768px) and (max-width:1000px){
+    .our-friends-block{
+        width: 640px;
+        padding-left: 25px;
     }
 }

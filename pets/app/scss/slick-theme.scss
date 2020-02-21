@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+$slick-loader-path: "./" !default;
+$slick-arrow-color: red !default;
+$slick-prev-character: url('../images/our-friends/long-left-arrow.png') !default;
+$slick-next-character: url('../images/our-friends/long-left-arrow.png') !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+/* Slider */
+
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    }
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover, &:focus {
+        outline: none;
+        background: transparent;
+        color: transparent;
+        &:before {
+            opacity: $slick-opacity-on-hover;
+        }
+    }
+}
+
+.slick-prev {
+    left: -130px;
+    border: 2px solid #f1cdb3;
+    border-radius:30px;
+    background-color: #f1cdb3;
+    &:before {
+        content: $slick-prev-character;
+    }
+}
+
+.slick-next {
+    border: 2px solid #f1cdb3;
+    border-radius:30px;
+    background-color: #f1cdb3;
+    right: -130px;
+    transform: rotate(180deg);
+    &:before {
+        content: $slick-next-character;
+    }
+}
+@media (max-width:1199px){
+    .slick-prev,
+    .slick-next{
+        display: none !important;
+    }
+}

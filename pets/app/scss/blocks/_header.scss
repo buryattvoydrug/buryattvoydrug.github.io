@@ -25,15 +25,6 @@
                     padding-top: 6px;
                 }
             }
-            .navbar__nav{
-                padding-top: 6px;
-                width: 463px;
-                display: flex;
-                justify-content: space-between;
-            }
-            .navbar__link{
-                display: none;
-            }
         }
         .header-block{
             margin: 240px 0 0 0;
@@ -48,6 +39,50 @@
             }
         }
     }
+}
+@media (min-width:768px){
+            .navbar__nav{
+                padding-top: 6px;
+                width: 463px;
+                display: flex;
+                justify-content: space-between;
+                .line{
+                    opacity: 0;
+                    width: 115px;
+                    height: 3px;
+                    border-radius: 2px;
+                    background: #f1cdb3;
+                    position: absolute;
+                    top: 95px;
+                }
+                .nav__link:hover{
+                    transition: all 1s;
+                    color: #fff;
+                }
+                .nav__link:nth-child(1) ~ .line{
+                    transition: all 0.5s linear;
+                }
+                .nav__link:nth-child(2):hover ~ .line{
+                    transform: translateX(155px);
+                    width: 50px;
+                    transition: all 0.5s linear;
+                }
+                .nav__link:nth-child(3):hover ~ .line{
+                    transform: translateX(250px);
+                    transition: all 0.5s linear;
+                }
+                .nav__link:nth-child(4):hover ~ .line{
+                    transform: translateX(405px);
+                    width: 60px;
+                    transition: all 0.5s linear;
+                }
+            }
+            .navbar__nav:hover .line{
+                opacity: 1;
+            }
+            .navbar__link{
+                display: none;
+            }
 }
 @media (min-width: 1201px) and (max-width:1600px){
     .header-section{
