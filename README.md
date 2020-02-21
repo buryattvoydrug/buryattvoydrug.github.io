@@ -11,9 +11,3 @@
 [copper](https://buryattvoydrug.github.io/cooper/)
 
 [Skinali](https://buryattvoydrug.github.io/skinali/)
-
-
-[luxe](https://buryattvoydrug.github.io/luxe/)
-
-
-[gohub](https://buryattvoydrug.github.io/gohub/)
