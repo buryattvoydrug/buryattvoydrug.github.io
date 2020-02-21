@@ -1,5 +1,6 @@
 # Мои работы
 [pets](https://buryattvoydrug.github.io/pets/app/)
+
 В данной работе реализована навигация по странице с плавной прокруткой, а также удобная навигация для мобильных устройств.
 
 [mars](https://buryattvoydrug.github.io/mars/app/)
