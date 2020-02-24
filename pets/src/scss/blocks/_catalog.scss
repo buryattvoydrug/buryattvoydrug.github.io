@@ -1,0 +1,13 @@
+.catalog-section{
+    .catalog{
+        max-width: 1260px;
+        .catalog-block{
+            display: flex;
+            flex-wrap: wrap;
+            @include frItem;
+            .friend__item{
+                margin: 0 15px 34px;
+            }
+        }
+    }
+}

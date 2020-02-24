@@ -1,20 +1,13 @@
-//npm init
-//npm install gulp --save-dev
-//npm install browser-sync --save-dev
-//npm install gulp-sass --save-dev
-//npm install gulp-rename --save-dev
-//npm i gulp-sourcemaps
-//npm i gulp-autoprefixer
-//npm install gulp-tinypng-compress
 var gulp=require('gulp');
 var sass=require('gulp-sass');
 var rename=require('gulp-rename');
 var sourcemaps=require('gulp-sourcemaps');
 var autoprefixer=require('gulp-autoprefixer');
-var tinypng = require('gulp-tinypng-compress');
+var ftp = require('gulp-ftp');
+var gutil = require('gulp-util');
 var browserSync = require('browser-sync').create();
 function sass_(){
-  return gulp.src('app/scss/style.scss')
+  return gulp.src('src/scss/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
       errorLogToConsole:true,
@@ -27,32 +20,31 @@ function sass_(){
         }))
     .pipe(rename({suffix:'.min'}))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream());
 }
-function browserReload (){
-    browserSync.reload();
-}
 function watch_(){
-    gulp.watch('app/scss/**/*.scss', sass_);
-    gulp.watch('app/*.html', browserReload);
-    gulp.watch('app/**/*.php', browserReload);
-    gulp.watch('app/**/*.js', browserReload);
+    gulp.watch('src/scss/**/*.scss', sass_);
+    gulp.watch('src/*.html').on('change', browserSync.reload);
+    gulp.watch('src/**/*.php').on('change', browserSync.reload);
+    gulp.watch('src/**/*.js').on('change', browserSync.reload);
 }
 function browserSync_(){
     browserSync.init({
        server:{
-           baseDir: 'app/'
+           baseDir: 'src/'
        },
         port: 3000
     });
 }
-gulp.task('default', gulp.parallel(browserSync_, watch_));
-gulp.task('tinypng', function (done) {
-    gulp.src('app/images/**/*.{png,jpg,jpeg}')
-        .pipe(tinypng({
-            key: 'Nn7kY1VBppp1CwmKXKP8cXyhtbLKqHxC'
+gulp.task('ftp_', function () {
+    return gulp.src('src/**')
+        .pipe(ftp({
+            host: '136.243.147.150',
+            user: 'burya128',
+            pass: 'cXtR81eu5g',
+            remotePath: 'www/buryattvoydrug.ru'
         }))
-        .pipe(gulp.dest('app/img'));
-    done();
+        .pipe(gutil.noop());
 });
+gulp.task('default', gulp.parallel(browserSync_, watch_));

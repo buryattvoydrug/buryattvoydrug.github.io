@@ -1,0 +1,27 @@
+.our-friend-section{
+    padding: 0 0 68px;
+    .our-friends{
+        .our-friends-block{
+            margin: 0 auto;
+            max-width: 910px;
+            display: flex;
+            justify-content: space-between;
+            @include frItem;
+        }
+        .button{
+            margin: 64px auto 0;
+            width: 267px;
+        }
+    }
+}
+@media(max-width:767px){
+    .our-friends-block{
+        width: 270px;
+    }
+}
+@media(min-width:768px) and (max-width:1000px){
+    .our-friends-block{
+        width: 640px;
+        padding-left: 25px;
+    }
+}

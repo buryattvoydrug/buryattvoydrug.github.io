@@ -31,4 +31,10 @@ $(document).ready(function(){
         slidesToShow: i,
         variableWidth: true
     });
+    $('.pet__button').on('click',function(){
+        $('.overlay').toggleClass('overlay_show');
+    });
+    $('.modal_close').on('click',function(){
+        $('.overlay').toggleClass('overlay_show');
+    });
 });
