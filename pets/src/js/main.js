@@ -33,8 +33,35 @@ $(document).ready(function(){
     });
     $('.pet__button').on('click',function(){
         $('.overlay').toggleClass('overlay_show');
+        //копирование имени
+        var name = $(this).prev().text();
+        $('.modal-block__title').text(name);
+        //копирование адреса картинки
+        var imgBlock = $(this).prev().prev();
+        var imgSrc= $('img',imgBlock).attr('src');
+        $('.modal-img img').attr('src',imgSrc);
+        //
+        //var value= $(this).parent().attr('data-pet-text');
+        var value= $(this).parent().attr('data-pet-text');
+        alert(value);
+        $('.modal-block__text').text(value);
+        //
+        var imgSrc= $(block).attr('data-pet-type');
+        $('.modal-img img').attr('data-pet-type',imgSrc);
+        //
+        var imgSrc= $(block).attr('data-pet-parasites');
+        $('.modal-img img').attr('data-pet-parasites',imgSrc);
+        //
+        var imgSrc= $(block).attr('data-pet-age');
+        $('.modal-img img').attr('data-pet-age',imgSrc);
+        //
+        var imgSrc= $(block).attr('data-pet-inoculations');
+        $('.modal-img img').attr('data-pet-inoculations',imgSrc);
+        //
+        var imgSrc= $(block).attr('data-pet-deseases');
+        $('.modal-img img').attr('data-pet-deseases',imgSrc);
     });
     $('.modal_close').on('click',function(){
         $('.overlay').toggleClass('overlay_show');
-    });
+    });  
 });
