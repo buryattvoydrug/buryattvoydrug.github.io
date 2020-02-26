@@ -1,0 +1,103 @@
+
+$slick-loader-path: "./" !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: black !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+/* Slider */
+
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    }
+}
+
+
+/* Dots */
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    top:224px;
+    right: 29px;
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    li {
+        position: relative;
+        display: block;
+        height: 13px;
+        width: 13px;
+        margin: 0 5px;
+        padding: 17px 0;
+        cursor: pointer;
+        button {
+            border: 0;
+            transition: 0.4s;
+            border: 1px solid black;
+            background:transparent;
+            display: block;
+            height: 13px;
+            width: 13px;
+            border-radius: 100px;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+            &:hover, &:focus {
+                outline: none;
+                transition: 0.7s;
+                background: #000;
+                &:before {
+                    opacity: $slick-opacity-on-hover;
+                }
+            }
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                font-size: $slick-dot-size;
+                line-height: 20px;
+                text-align: center;
+                color: $slick-dot-color;
+                opacity: $slick-opacity-not-active;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        &.slick-active button:before {
+            background: #000;
+        }
+    }
+}
+
+

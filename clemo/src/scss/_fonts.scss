@@ -1,0 +1,100 @@
+@font-face {
+font-family: 'Montserrat Light';
+src: url('../fonts/Montserrat-Light.eot');
+src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Montserrat-Light.woff') format('woff'),
+url('../fonts/Montserrat-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Montserrat Regular';
+src: url('../fonts/Montserrat-Regular.eot');
+src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Montserrat-Regular.woff') format('woff'),
+url('../fonts/Montserrat-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Montserrat Bold';
+src: url('../fonts/Montserrat-ExtraBold.eot');
+src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Montserrat Hairline';
+font-style: normal;
+font-weight: normal;
+src: local('Montserrat Hairline'), url('../fonts/Montserrat-Hairline.woff') format('woff');
+}
+@mixin light($fSize){
+	font-family: 'Montserrat Light';
+	font-size: $fSize;
+}
+@mixin regular($fSize){
+	font-family: 'Montserrat Regular';
+	font-size: $fSize;
+}
+@mixin bold($fSize){
+	font-family: 'Montserrat Bold';
+	font-size: $fSize;
+}
+@mixin hairline($fSize){
+	font-family: 'Montserrat Hairline';
+	font-size: $fSize;
+}
+@mixin black{
+	color:#000;
+}
+@mixin white{
+	color:#fff;
+}
+@mixin grey{
+	color:#656565;
+}
+.logo{
+	@include bold(30px);
+	@include black;
+	line-height: 24px;
+}
+.nav__item{
+	@include light(18px);
+	color:#989898;
+	line-height: 24px;
+}
+.slider__title{
+	@include bold(48px);
+	@include black;
+	text-align: center;
+}
+.slider__text{
+	@include light(24px);
+	@include black;
+	text-align: center;
+}
+.section__title{
+	@include hairline(60px);
+	@include black;
+}
+.article__title{
+	@include light(30px);
+	@include black;
+	line-height: 48px;
+	strong{
+		@include bold(48px);
+	}
+}
+.article__text{
+	@include light(18px);
+	line-height: 27px;
+	@include grey;
+}
+.contact__text{
+	@include light(18px);
+	line-height: 27px;
+	@include white;
+}
