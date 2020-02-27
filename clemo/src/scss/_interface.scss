@@ -28,6 +28,9 @@ a{
 .white__button{
 	@include light(18px);
 	line-height: 18px;
+	border-radius: 25px;
+	border: 1px solid #d8d8d8;
+	background-color: #fff;
 	@include black;
 }
 .title__line{

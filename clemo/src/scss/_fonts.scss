@@ -79,6 +79,7 @@ src: local('Montserrat Hairline'), url('../fonts/Montserrat-Hairline.woff') form
 .section__title{
 	@include hairline(60px);
 	@include black;
+	text-align: center;
 }
 .article__title{
 	@include light(30px);
