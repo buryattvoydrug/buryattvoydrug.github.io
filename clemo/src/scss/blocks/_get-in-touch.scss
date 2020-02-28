@@ -1,0 +1,73 @@
+.get-in-touch-section{
+	background:black;
+	.get-in-touch{
+		display:flex;
+		justify-content: space-around;
+		.get-in-touch-address,
+		.get-in-touch-form{
+			width: 50%;
+			display:flex;
+			flex-direction: column;
+		}
+		.get-in-touch-address{
+			margin-top: 43px;
+			.contact__text{
+				margin:  0 0 37px;
+				position:relative;
+				padding-left: 34px;
+			}
+			&:before{
+				position: absolute;
+				content:url(../images/get-in-touch/Pin.png);
+				padding-top: 5px;
+			}
+			a.contact__text:nth-child(3):before{
+				position: absolute;
+				content:url(../images/get-in-touch/Envelope.png);
+				left: 0;
+			}
+			a.contact__text:nth-child(2):before{
+				position: absolute;
+				content:url(../images/get-in-touch/iPhone.png);
+				left: 0;
+			}
+			.social{
+				display:flex;
+				.social__item{
+					display:flex;
+					justify-content: center;
+					margin: 5px 20px 0 0;
+					align-items: center;
+					width: 40px;
+					height: 40px;
+					border-radius:100px;
+					background:white;
+				}
+			}
+		}
+		.get-in-touch-form{
+			.get-in-touch__form{
+				display:flex;
+				flex-direction: column;
+				.form__input{
+					height: 80px;
+					width: 462px;
+					margin: 0 14px;
+					padding-top: 35px;
+					border:none;
+					border-bottom:1px solid #333;
+					background:transparent;
+				}
+				textarea.form__input{
+					resize:none;
+					height: 160px;
+					padding-top: 45px;
+					padding-left: 0;
+				}
+			}
+			.button{
+				margin: 53px 0 100px 14px;
+			}
+		}
+	}
+}

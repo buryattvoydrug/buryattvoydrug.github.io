@@ -80,22 +80,45 @@ src: local('Montserrat Hairline'), url('../fonts/Montserrat-Hairline.woff') form
 	@include hairline(60px);
 	@include black;
 	text-align: center;
+	padding: 72px 0 37px;
+}
+.get-in-touch-section{
+	.section__title{
+		@include white;
+	}
+}
+.form__input{
+	@include light(18px);
+	opacity:0.8;
+	@include white;
+	padding-top: 46px;
 }
 .article__title{
 	@include light(30px);
 	@include black;
-	line-height: 48px;
+	line-height: 13px;
 	strong{
 		@include bold(48px);
+		line-height: 68px;
 	}
 }
 .article__text{
 	@include light(18px);
 	line-height: 27px;
+	margin: 0 0 30px 3px;
 	@include grey;
 }
 .contact__text{
 	@include light(18px);
 	line-height: 27px;
 	@include white;
+}
+.copyright{
+	@include light(14px);
+	@include grey;
+	line-height: 24px;
+	strong{
+		@include bold(18px);
+		@include black;
+	}
 }

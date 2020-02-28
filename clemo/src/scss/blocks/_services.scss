@@ -3,6 +3,7 @@
 		display:flex;
 		flex-wrap:wrap;
 		justify-content: space-between;
+		padding: 50px 0;
 		.service-img{
 			max-width: 560px;
 			height:560px;
@@ -13,8 +14,28 @@
 			}
 		}
 		.article{
-			margin-left: 80px;
-			max-width: 40%;
+			padding-left: 80px;
+			max-width: 50%;
+			.title__line{
+			    margin: 14px 0 23px;
+			}
+			.button{
+				margin-top: 44px;
+			}
 		}
+	}
+	.service:nth-child(3){
+		flex-direction: row-reverse;
+		.article{
+			padding-left: 0;
+			padding-right: 80px;
+		}
+		.service-img{
+			margin-left: 15px;
+			margin-right: 0;
+		}
+	}
+	.service:last-child{
+		padding-bottom: 0;
 	}
 }
