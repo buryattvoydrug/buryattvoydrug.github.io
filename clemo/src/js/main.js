@@ -1,11 +1,19 @@
 $(document).ready(function(){
 	$('.slider').slick({
-			dots: true,
+		 dots: true,
+         infinite: false,
+         arrows: false,
+         autoplay: true,
+         autoplaySpeed: 3000,
+         slidesToShow: 1
+     });
+    $('.best-team-slider').slick({
+         dots: true,
          infinite: false,
          arrows: false,
          autoplay: true,
          autoplaySpeed: 4000,
-         slidesToShow: 1
+         slidesToShow: 3
      });
 	$('#ex1').galereya({
     wave: false,

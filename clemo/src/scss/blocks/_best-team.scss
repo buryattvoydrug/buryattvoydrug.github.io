@@ -1,0 +1,24 @@
+.best-team-section{
+	background:#ffe1bd;
+	.best-team-slider{
+		margin: 0 auto;
+		max-width: 885px;
+		display:flex;
+		flex-wrap: wrap;
+		&__item{
+			display:flex;
+			flex-direction: column;
+			align-items:center;
+			width: 295px;
+			.slider-img{
+				width: 168px;
+				height: 168px;
+				border-radius:100px;
+				overflow: hidden;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
