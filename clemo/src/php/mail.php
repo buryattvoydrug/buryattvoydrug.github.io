@@ -1,22 +1,45 @@
-<?php
-$name = trim($_POST['name']);
-$email = trim($_POST['e-mail']);
-$message = trim($_POST['message']);
+<?php 
 
-// указываем адрес отправителя, можно указать адрес на домене Вашего сайта
-$fromMail = 'igor.radimov666@gmail.com';
-$fromName = 'clemo.ru';
+$name = $_POST['name'];
+$email = $_POST['e-mail'];
+$message = $_POST['message'];
 
-// Сюда введите Ваш email
-$emailTo = 'buryattvoydrug@gmail.com';
-$subject = 'Форма обратной связи на php';
-$subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
-$headers = "Content-type: text/plain; charset=\"utf-8\"\r\n";
-$headers .= "From: ". $fromName ." <". $fromMail ."> \r\n";
+require_once('phpmailer/PHPMailerAutoload.php');
+$mail = new PHPMailer;
+$mail->CharSet = 'utf-8';
 
-// тело письма
-$body = "Получено письмо с сайта clemo.ru \n Имя: $name\n e-mail: $email\message: $message\n";
-$mail = mail($emailTo, $subject, $body, $headers, '-f'. $fromMail );
- echo "Ваше сообщение успешно отправлено!<Br> Вы получите ответ в
-      ближайшее время<Br> $back";
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'igor.radimov@mail.ru';                 // Наш логин
+$mail->Password = 'hT6-Zvf-3wE-DB4';                           // Наш пароль от ящика
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465;                                    // TCP port to connect to
+ 
+$mail->setFrom('igor.radimov@mail.ru', 'Igor Radimov');   // От кого письмо 
+$mail->addAddress('buryattvoydrug@gmail.com');     // Add a recipient
+//$mail->addAddress('ellen@example.com');               // Name is optional
+//$mail->addReplyTo('info@example.com', 'Information');
+//$mail->addCC('cc@example.com');
+//$mail->addBCC('bcc@example.com');
+//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+$mail->isHTML(true);                                  // Set email format to HTML
+
+$mail->Subject = 'Новая заявка с сайта';
+$mail->Body    = '
+	Пользователь оставил свои данные <br> 
+	Имя: ' . $name . ' <br>
+	Почта: ' . $email . ' <br>
+	Сообщение: ' . $message . '';
+$mail->AltBody = 'Что-то пошло не так.';
+
+if(!$mail->send()) {
+    echo "Error";
+} else {
+    header('location: ../thankyou.html');
+}
+
 ?>

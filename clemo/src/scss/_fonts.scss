@@ -124,10 +124,12 @@ src: local('Montserrat Hairline'), url('../fonts/Montserrat-Hairline.woff') form
 }
 .team__name{
 	@include bold(40px);
+	margin: 19px 0 12px;
 	line-height: 42px;
 	text-align: center;
 }
 .team__prof{
 	@include light(18px);
 	text-align: center;
+	margin: 12px 0 0;
 }

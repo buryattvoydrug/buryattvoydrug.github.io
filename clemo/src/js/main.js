@@ -9,11 +9,12 @@ $(document).ready(function(){
      });
     $('.best-team-slider').slick({
          dots: true,
-         infinite: false,
-         arrows: false,
+         infinite: true,
+         arrows: true,
          autoplay: true,
-         autoplaySpeed: 4000,
-         slidesToShow: 3
+         autoplaySpeed: 3000,
+         slidesToShow: 3,
+         slidesToScroll:3
      });
 	$('#ex1').galereya({
     wave: false,
