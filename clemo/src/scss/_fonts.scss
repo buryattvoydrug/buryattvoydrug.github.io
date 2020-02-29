@@ -133,3 +133,33 @@ src: local('Montserrat Hairline'), url('../fonts/Montserrat-Hairline.woff') form
 	text-align: center;
 	margin: 12px 0 0;
 }
+.slogan{
+	@include bold(40px);
+	line-height: 54px;
+	@include black;
+}
+.about__text{
+	@include light(18px);
+	line-height: 27px;
+	@include grey;
+}
+.stat__number{
+	@include bold(40px);
+	@include black;
+}
+.stat__text{
+	@include light(18px);
+	@include black;
+}
+.price__title{
+	@include light(30px);
+	@include white;
+}
+.price__text{
+	@include light(30px);
+	color:#8e8e8e;
+	strong{
+		@include bold(40px);
+		@include white;
+	}
+}

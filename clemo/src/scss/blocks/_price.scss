@@ -1,0 +1,11 @@
+.price-section{
+	background: #000000;
+	.price{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.title__line{
+			background:#fff;
+		}
+	}
+}

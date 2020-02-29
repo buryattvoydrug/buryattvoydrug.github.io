@@ -1,0 +1,12 @@
+.best-works{
+	column-count: 3;
+	column-gap:28px;
+	.grid-item{
+		margin-bottom: 28px;
+		display: inline-block;
+		width: 364px;
+		img{
+			width: 100%;
+		}
+	}
+}
