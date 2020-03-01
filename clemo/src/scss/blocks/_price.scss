@@ -1,8 +1,9 @@
 .price-section{
+	padding: 73px 18% 77px;
 	background: #000000;
 	.price{
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
 		.title__line{
 			background:#fff;

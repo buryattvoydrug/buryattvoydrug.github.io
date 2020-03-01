@@ -1,12 +1,29 @@
-.best-works{
-	column-count: 3;
-	column-gap:28px;
-	.grid-item{
-		margin-bottom: 28px;
-		display: inline-block;
-		width: 364px;
-		img{
-			width: 100%;
+.our-best-work{
+	margin-bottom: 50px;
+	.best-works{
+		width: 1180px;
+		margin: 37px auto 0;
+		.best-works__item{
+			margin: 14px;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			width: 364px;
+			height: 364px;
+			overflow: hidden;
+			img{
+				height: 100%;
+	       	width: auto;
+			}
 		}
+		.best-works__item:nth-child(2n){
+			height: 590px;
+		}
+	}
+	.full{
+		width: 100% !important;
+	}
+	.button{
+		margin: 36px auto 0;
 	}
 }

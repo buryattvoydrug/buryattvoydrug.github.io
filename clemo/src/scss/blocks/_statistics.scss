@@ -1,10 +1,14 @@
 .stat{
+	padding: 91px 0 95px;
 	display: flex;
 	justify-content: space-around;
 	.stat__item{
 		display: flex;
 		flex-direction: column;
 		align-items: center;	
+		.title__line{
+			margin: 9px 0 12px;
+		}
 	}
 	.stat__number{
 		display: block;

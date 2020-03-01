@@ -1,5 +1,6 @@
 .about-us{
 	display: flex;
+	margin-top: 50px;
 	.about-us-block{
 		width: 50%;
 		.about-img{
@@ -11,14 +12,26 @@
 			}
 		}
 		.about__slogan{
+			padding: 51px 0 87px 72px;
+			.title__line{
+				margin-bottom: 31px;
+			}
 			.slogan{
 				display: block;
 				max-width: 365px;
 			}
 		}
-		.about__text{
-			max-width:480px;
-			margin-bottom: 20px;
+		.title__line{
+			margin-bottom: 44px;
 		}
+		.about__text{
+			margin-bottom: 31px;
+		}
+		.button{
+			margin-top: 45px;
+		}
+	}
+	.about-us-block:nth-child(2){
+		padding: 0 0 0 84px;
 	}
 }
