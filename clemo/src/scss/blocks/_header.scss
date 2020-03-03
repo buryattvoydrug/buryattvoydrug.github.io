@@ -8,6 +8,9 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	.navbar__link{
+		display: none;
+	}
 }
 .slider__item{
 	width: 100%;
@@ -47,4 +50,102 @@
 					rgba(255,255,255,0.75);
 	background-blend-mode: color;
 	background-size:cover;
+}
+@media (max-width: 767px){
+	.navbar{
+		 margin: 20px 0;
+  		 padding:0 20px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    .logo{
+	        z-index: 3;
+	        transition: all 2s;
+	    }
+	    .logo_active{
+	    	color:white
+	    }
+	    .nav{
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        padding-top: 150px;
+	        width: auto;
+	        display: flex;
+	        flex-direction: column;
+	        align-items: center;
+	        justify-content: flex-start;
+	        transition: all 0.7s;
+	        transform: translateX(-100%);
+	        background: black;
+	        height: 100vh;
+	        width: 100%;
+	        z-index: 2;
+	        .nav__item{
+	            padding: 7px 50px 7px 50px;
+	            border-radius: 36px;
+	            margin-bottom: 15px;
+	            background: white;
+	            color: #292929;
+	            box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+	        }
+	    }
+	    .navbar__nav_active{
+	        transform: translateX(0);
+	    }
+	    .navbar__link{
+	        z-index: 3;
+	        display: block;
+	        position: relative;
+	        height: 50px;
+	        width: 50px;
+	        span,
+	        span:before,
+	        span:after{
+	            transition: all 0.3s;
+	            position: absolute;
+	            display: block;
+	            height: 2px;
+	            width: 18px;
+	            top: 50%;
+	            left: 50%;
+	            margin: -1px 0 0 -9px;
+	            background: black;
+	        }
+	        span:before{
+	            content:"";
+	            transition: all 0.3s;
+	            margin-top: -7px;
+	        }
+	        span:after{
+	            content:"";
+	            transition: all 0.3s;
+	            margin-top: 5px;
+	        }
+	    }
+	    .navbar__link_active{
+	    	  span,
+	        span:before,
+	        span:after{
+	        		background:white;
+	        }
+	        span{
+	            background: transparent;
+	        }
+	        span:before{
+	            transform: rotate(45deg);
+	            margin-top: 0;
+	        }
+	        span:after{
+	            transform: rotate(-45deg);
+	            margin-top: 0;
+	        }
+	    }
+	}
+
+}
+@media (min-width: 768px) and (max-width:1200px){
+	.navbar{
+		padding: 0 40px;
+	}
 }

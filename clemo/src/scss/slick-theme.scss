@@ -97,7 +97,8 @@ $slick-prev-character: url(../images/best-team/arrow_black.png) !default;
         }
     }
 }
-.best-team-slider{
+.best-team-slider,
+.best-team-slider-small{
    .slick-dotted.slick-slider {
        margin-bottom: 30px;
    }
@@ -210,4 +211,14 @@ $slick-prev-character: url(../images/best-team/arrow_black.png) !default;
     &:before {
         content: $slick-prev-character;
     }
+}
+@media (max-width:767px){
+  .slick-dots{
+    bottom: 5px !important;
+  }
+}
+@media (max-width:1200px) {
+  .slick-arrow{
+    display: none !important;
+  }
 }

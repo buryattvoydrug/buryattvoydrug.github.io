@@ -163,3 +163,13 @@ src: local('Montserrat Hairline'), url('../fonts/Montserrat-Hairline.woff') form
 		@include white;
 	}
 }
+@media (max-width: 600px){
+	.section__title{
+		font-size: 45px !important;
+		padding: 35px 0;
+	}
+	.team__name{
+		font-size: 30px;
+		line-height: 30px;
+	}
+}

@@ -1,5 +1,4 @@
 <section class="our-best-work-section">
-	<!-- <div class="container"> -->
 		<div id="nav-2" class="our-best-work">
 			<h2 class="section__title">our best work</h2>
 				 <?php 
@@ -12,7 +11,9 @@
 				 	{
 				 		echo"
 				 		<div class='best-works__item'>
-				 			<img src='images/galery/$file' alt=''>
+				 			<a href='images/galery/$file'>
+				 				<img src='images/galery/$file' alt=''>
+				 			</a>
 			 			</div>
 				 		";
 				 	}
@@ -21,5 +22,4 @@
 				?>
 			<div id="more" class="button black__button">load more</div>
 		</div>
-	<!-- </div> -->
-</section>
+</section>	

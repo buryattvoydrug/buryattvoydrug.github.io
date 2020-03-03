@@ -1,5 +1,4 @@
-<section class="our-best-work-section">
-	<!-- <div class="container"> -->
+<!-- <section class="our-best-work-section">
 		<div id="nav-2" class="our-best-work">
 			<h2 class="section__title">our best work</h2>
 				 <?php 
@@ -21,5 +20,4 @@
 				?>
 			<div  class="button black__button"><a href="galery-page.php">go to galery</a></div>
 		</div>
-	<!-- </div> -->
-</section>
+</section> -->

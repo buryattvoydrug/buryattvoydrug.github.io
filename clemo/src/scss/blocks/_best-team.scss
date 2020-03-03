@@ -1,7 +1,8 @@
 .best-team-section{
 	background:#ffe1bd;
 	padding-bottom: 109px;
-	.best-team-slider{
+	.best-team-slider,
+	.best-team-slider-small{
 		margin: 50px auto;
 		max-width: 885px;
 		display:flex;
@@ -21,5 +22,18 @@
 				width: 100%;
 			}
 		}
+	}
+}
+@media (max-width: 767px){
+	.best-team-section{
+		padding-bottom: 25px;
+	}
+	.best-team-slider{
+		&__item{
+			transform: scale(0.7) !important;
+		}
+	}
+	.best-team-slider-small{
+		margin: 0 auto !important;
 	}
 }
