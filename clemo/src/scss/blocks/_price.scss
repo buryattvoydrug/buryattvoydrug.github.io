@@ -10,3 +10,16 @@
 		}
 	}
 }
+@media(max-width:950px){
+	.price-section{
+		.price{
+			flex-direction: column;
+			.title__line{
+				margin: 20px 0;
+			}
+			.button{
+				margin-top: 20px;
+			}
+		}
+	}
+}

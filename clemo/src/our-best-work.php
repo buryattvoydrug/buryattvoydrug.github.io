@@ -12,7 +12,7 @@
 				 		echo"
 				 		<div class='best-works__item'>
 				 			<a href='images/galery/$file'>
-				 				<img src='images/galery/$file' alt=''>
+				 				<img class='lazy' data-original='images/galery/tiny/$file' alt=''>
 				 			</a>
 			 			</div>
 				 		";

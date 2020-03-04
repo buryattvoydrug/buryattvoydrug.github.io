@@ -63,3 +63,36 @@
 		width: 1960px !important;
 	}
 }
+@media(max-width:1200px){
+	.our-best-work{
+		.best-works{
+			width: 100%;
+			.best-works__item{
+				width: 30%;
+				margin: 12px;
+				height: 250px;
+				img{
+					width: auto;
+					height: 250px;
+				}
+			}
+			.best-works__item:nth-child(2n){
+				height: 390px;
+				img{
+					height: 405px;
+				}
+			}
+		}
+	}
+}
+@media(max-width:720px){
+	.our-best-work{
+		.best-works{
+			width: 100%;
+			.best-works__item{
+				width: 45%;
+				margin: 7px;
+			}
+		}
+	}
+}

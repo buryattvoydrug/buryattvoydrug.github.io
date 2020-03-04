@@ -2,6 +2,7 @@
 	background:black;
 	.get-in-touch{
 		display:flex;
+		flex-wrap:wrap;
 		justify-content: space-around;
 		.get-in-touch-address,
 		.get-in-touch-form{
@@ -42,6 +43,10 @@
 					height: 40px;
 					border-radius:100px;
 					background:white;
+					transition:all 0.5s;
+				}
+				.social__item:hover{
+					background:#ffe1bd;
 				}
 			}
 		}
@@ -52,6 +57,7 @@
 				.form__input{
 					height: 80px;
 					width: 462px;
+					max-width:100%;
 					margin: 0 14px;
 					padding-top: 35px;
 					border:none;
@@ -69,5 +75,21 @@
 				margin: 53px 0 100px 14px;
 			}
 		}
+	}
+}
+@media(max-width:1400px){
+	.get-in-touch-address,
+	.get-in-touch-form{
+		padding: 0 30px;
+	}
+}
+@media(max-width:767px){
+	.get-in-touch{
+		flex-direction: column;
+	}
+	.get-in-touch-address,
+	.get-in-touch-form{
+		width: 90% !important;
+		padding: 0 30px;
 	}
 }

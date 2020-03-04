@@ -1,4 +1,4 @@
-<!-- <section class="services-section">
+<section class="services-section">
 			<div class="services" id="nav-1">
 				<div class="container">
 					<h2 class="section__title">what we do?</h2>
@@ -40,4 +40,4 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>

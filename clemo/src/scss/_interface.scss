@@ -20,11 +20,16 @@ a{
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+	transition:all 0.4s;
 }
 .black__button{
 	@include light(18px);
 	line-height: 18px;
 	@include white;
+}
+.black__button:hover{
+	color:#000;
+	background: #ffcb93;
 }
 .white__button{
 	@include light(18px);
@@ -33,6 +38,12 @@ a{
 	border: 1px solid #d8d8d8;
 	background-color: #fff;
 	@include black;
+}
+.white__button:hover{
+	border:1px solid #000;
+}
+.w_button:hover{
+	background: #ffcb93;
 }
 .title__line{
 	width: 55px;
@@ -46,4 +57,7 @@ a{
 }
 .stop-scroll{
 	overflow-y:hidden;
+}
+input{
+	outline: none !important;
 }

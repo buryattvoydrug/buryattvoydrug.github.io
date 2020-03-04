@@ -25,6 +25,8 @@
 			}
 		}
 	}
+}
+@media(min-width:1200px){
 	.service:nth-child(3){
 		flex-direction: row-reverse;
 		.article{
@@ -38,5 +40,32 @@
 	}
 	.service:last-child{
 		padding-bottom: 0;
+	}
+}
+@media(max-width:1199px){
+	.services{
+		.service{
+			.article{
+				max-width: 80% ;
+			}
+			.service-img{
+				margin: 0 0 50px 80px;
+			}
+		}
+	}
+}
+@media(max-width:767px){
+	.services{
+		.service{
+			.article{
+				max-width: 95% ;
+				padding-left: 30px;
+			}
+			.service-img{
+				margin: 0 0 20px 30px;
+				max-width: 85%;
+				height: 407px;
+			}
+		}
 	}
 }

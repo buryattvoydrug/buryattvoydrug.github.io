@@ -1,4 +1,4 @@
-		<!-- <section class="map">
+		<section class="map">
 			<div id="map" style="width: 100%; height: 450px"></div>
 		</section>
 		<section class="get-in-touch-section" id="nav-3">
@@ -23,7 +23,7 @@
 								<input type="text" name="name" class="form__input" placeholder="name">
 								<input type="text" name="e-mail" class="form__input" placeholder="e-mail">				
 								<textarea class="form__input" name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
-								<button class="button white__button" type="submit">submit</button>
+								<button class="button white__button  w_button" type="submit">submit</button>
 						</form>
 					</div>
 				</div>
@@ -34,12 +34,13 @@
 		<div class="container">
 			<copyright class="copyright"><strong>© 2016 clemo.</strong>all rights reserved</copyright>
 		</div>
-	</footer> -->
+	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/jquery.lazyload.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.lazyload.min.js"></script>
 </body>
 </html>

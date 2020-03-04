@@ -65,6 +65,14 @@ src: local('Montserrat Hairline'), url('../fonts/Montserrat-Hairline.woff') form
 	@include light(18px);
 	color:#989898;
 	line-height: 24px;
+	margin-bottom: 3px;
+}
+.nav__item:hover{
+	@include bold(18px);
+	transition:all 0.6s;
+	border-bottom: 3px solid black;
+	margin-bottom: 0;
+	color: #000;
 }
 .slider__title{
 	@include bold(48px);
