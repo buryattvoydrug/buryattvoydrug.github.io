@@ -11,7 +11,7 @@
 		<section class="best-team-section">
 			<div class="best-team">
 				<div class="container">
-					<h2 class="section__title">best team</h2>
+					<h2 class="section__title revealator-slideup">best team</h2>
 					<div class="best-team-slider">
 						<div class="best-team-slider__item">
 							<div class="slider-img">

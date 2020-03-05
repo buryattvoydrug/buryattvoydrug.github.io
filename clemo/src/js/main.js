@@ -7,6 +7,7 @@ $(document).ready(function(){
             $('body').toggleClass('stop-scroll');
         });
         $('.nav__item').on('click',function(){
+            $('.logo').toggleClass('logo_active');
             setTimeout(function(){
                 $('body').toggleClass('stop-scroll');
                 $('.navbar__link').toggleClass('navbar__link_active');

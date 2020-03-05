@@ -1,6 +1,6 @@
 <section class="our-best-work-section">
 		<div id="nav-2" class="our-best-work">
-			<h2 class="section__title">our best work</h2>
+			<h2 class="section__title revealator-slideup">our best work</h2>
 				 <?php 
 				 $fo=opendir("images/galery");
 				 echo "<div class='best-works full'>";
@@ -20,6 +20,6 @@
 				 }
 				 echo "</div>";
 				?>
-			<div id="more" class="button black__button">load more</div>
+			<div id="more" class="button black__button revealator-slideup">load more</div>
 		</div>
 </section>	
