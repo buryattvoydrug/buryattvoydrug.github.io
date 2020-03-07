@@ -1,0 +1,92 @@
+@font-face {
+font-family: 'Lato Light';
+src: url('../fonts/Lato-Light.eot');
+src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Lato-Light.woff') format('woff'),
+url('../fonts/Lato-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Lato Regular';
+src: url('../fonts/Lato-Regular.eot');
+src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Lato-Regular.woff') format('woff'),
+url('../fonts/Lato-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Lato Bold';
+src: url('../fonts/Lato-Bold.eot');
+src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Lato-Bold.woff') format('woff'),
+url('../fonts/Lato-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Varela Regular';
+src: url('../fonts/VarelaRound-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@mixin light($fsize){
+	font-family: 'Lato Light';
+	font-size: $fsize;
+}
+@mixin regular($fsize){
+	font-family: 'Lato Regular';
+	font-size: $fsize;
+}
+@mixin bold($fsize){
+	font-family: 'Lato Bold';
+	font-size: $fsize;
+}
+@mixin varela($fsize){
+	font-family: 'Varela Regular';
+	font-size: $fsize;
+	color: #26272d;
+}
+.nav__item{
+	@include regular(16px);
+	color: #26272d;
+	text-decoration: none;
+	&:hover{
+		opacity: 0.4;
+		color: #1b1c1e;
+	}
+}
+.blue__button{
+	@include regular(16px);
+	color:#fff;
+}
+.white__button{
+	@include regular(16px);
+	color: #26272d;
+}
+.header__title{
+	@include varela(62px);
+	line-height: 72px;
+	color:#26272d;
+}
+.section__title{
+	@include varela(42px);
+	line-height: 52px;
+	color: #26272d;
+}
+.features__title{
+	@include light(26px);
+	line-height: 34px;
+	color: #26272d;
+}
+.section__text{
+	@include regular(20px);
+	line-height: 28px;
+	color: #8c8f94;
+}
+.features__text{
+	@include regular(18px);
+	line-height: 26px;
+	color: #8c8f94;
+}

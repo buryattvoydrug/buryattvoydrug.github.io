@@ -1,0 +1,18 @@
+*{
+	box-sizing:border-box;
+	margin: 0;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.button{
+	display: flex;
+	align-items: center;
+}
+@mixin button($width,$height,$bg){
+	width: $width;
+	height: $height;
+	border-radius: 21px;
+	background-color: $bg;
+}

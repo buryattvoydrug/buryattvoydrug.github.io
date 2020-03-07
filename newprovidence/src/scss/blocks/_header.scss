@@ -1,0 +1,46 @@
+header{
+	.navbar{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.nav{
+			display: flex;
+			align-items: center;
+		}
+		.nav:first-child{
+			.nav__link{
+				margin-right: 30px;
+			}
+			.nav__item{
+				margin-right: 42px;
+			}
+		}
+		.nav:last-child{
+			.nav__item{
+				margin-right: 30px;
+			}
+			.button{
+				@include button(132px,42px,#267df4);
+				img{
+					padding: 9px 14px 13px 17px;
+				}
+			}
+		}
+	}
+	.header__title{
+		text-align: center;
+		padding: 0;
+	}
+	.section__text{
+		width: 793px;
+		margin: 0 auto;
+	}
+	.white__button{
+		@include button(205px,50px,transparent);
+		border: 1px solid #26272d;
+		margin: 0 auto;
+		img{
+			padding: 20px 15px 20px 42px;
+		}
+	}
+}
