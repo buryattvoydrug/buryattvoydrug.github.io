@@ -90,3 +90,28 @@ font-style: normal;
 	line-height: 26px;
 	color: #8c8f94;
 }
+.footer__text{
+	@include regular(14px);
+	line-height: 24px;
+	color: #8c8f94;
+}
+.nav__title{
+	@include bold(12px);
+	letter-spacing: 1.2px;
+	color: #26272d;
+	text-transform: uppercase;
+}
+.footer{
+	.nav__item{
+		@include regular(16px);
+		color: #8c8f94;
+	}
+}
+.logo{
+	@include regular(12px);
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	strong{
+		@include bold(12px);
+	}
+}

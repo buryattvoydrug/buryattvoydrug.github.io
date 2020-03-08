@@ -10,6 +10,23 @@
 	display: flex;
 	align-items: center;
 }
+.black__button{
+	width: 210px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: #131315;
+	img{
+		padding: 14px 18px 18px 27px;
+	}
+	.button__text{
+		@include regular(12px);
+		color:#fff;
+		span:nth-child(2){
+			@include regular(23px);
+			display: block;
+		}
+	}
+}
 @mixin button($width,$height,$bg){
 	width: $width;
 	height: $height;

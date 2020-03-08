@@ -1,0 +1,33 @@
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.footer-left{
+		.footer__text{
+			padding: 10px 0 10px;
+			display: block;
+			max-width: 250px;
+		}
+		.social{
+			margin: 20px 0 20px;
+			width: 222px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	.footer-right{
+		.footer-navbar{
+			display: flex;
+			.nav-col{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+.copyrights{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
