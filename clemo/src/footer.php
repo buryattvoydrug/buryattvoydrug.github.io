@@ -32,7 +32,7 @@
 	</main>
 	<footer>
 		<div class="container">
-			<copyright class="copyright"><strong>© 2016 clemo.</strong>all rights reserved</copyright>
+			<copyright class="copyright"><strong>© 2020 clemo.</strong>buryattvoydrug</copyright>
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
