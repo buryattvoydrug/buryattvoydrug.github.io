@@ -1,0 +1,29 @@
+.map-feature-section{
+	position: relative;
+	overflow-x: hidden;
+}
+.map-feature{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 208px 0 222px;
+	max-width: 470px;
+	.section__title{
+		padding-bottom: 58px;
+	}
+	.section__text{
+		padding: 0 0 27px;
+	}
+	.partners-block{
+		display: flex;
+		align-items: center;
+		img{
+			margin-right: 30px;
+		}
+	}
+}
+.map-feature-img{
+	position: absolute;
+	top: 207px;
+	right: -9.5%;
+}

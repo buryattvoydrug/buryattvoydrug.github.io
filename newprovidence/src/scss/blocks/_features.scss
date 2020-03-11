@@ -1,8 +1,21 @@
 .features{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	padding: 122px 31px 95px 38px;
+	border-bottom: 1px solid rgba(38, 39, 45, 0.05);
 	.feature{
 		max-width: 500px;
+		.features-img{
+			height: 51px;
+			display: flex;
+			align-items:center;
+		}
+		.features__title{
+			padding: 40px 0 35px;
+		}
+		.features__text{
+			padding-bottom: 27px;
+		}
 	}
 }

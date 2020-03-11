@@ -1,0 +1,31 @@
+.iphone-feature{
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	padding: 256px 0 233px;
+	.iphone-feature-img{
+		position: absolute;
+		top:120px;
+		left: -31%;
+	}
+	.iphone-feature-block{
+		max-width: 470px;
+		.section__title{
+			padding-bottom: 67px;
+		}
+		.section__text{
+			padding-bottom: 28px;
+		}
+		.buttons-block{
+			margin: 42px 0 0;
+			display: flex;
+			.white__button{
+				margin-left: 20px;
+				@include button(142px,42px,transparent);
+				border: 1px solid rgba(38, 39, 45, 0.1);
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}

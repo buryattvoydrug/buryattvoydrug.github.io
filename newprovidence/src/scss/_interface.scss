@@ -2,6 +2,12 @@
 	box-sizing:border-box;
 	margin: 0;
 }
+@mixin button($width,$height,$bg){
+	width: $width;
+	height: $height;
+	border-radius: 21px;
+	background-color: $bg;
+}
 .container{
 	max-width: 1170px;
 	margin: 0 auto;
@@ -27,9 +33,13 @@
 		}
 	}
 }
-@mixin button($width,$height,$bg){
-	width: $width;
-	height: $height;
+.blue__button{
+	@include button(202px,42px,#267df4);
+	justify-content: space-between;
+	padding: 0 24px 0 2px;
+}
+.green__button{
+	@include button(164px,42px,#6fc754);
+	border:none;
 	border-radius: 21px;
-	background-color: $bg;
 }

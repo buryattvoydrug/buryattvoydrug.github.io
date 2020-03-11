@@ -40,13 +40,13 @@
 		<div class="container">
 			<div class="features">
 				<div class="feature">
-					<img src="images/features/features-img-1.png" alt="" class="features__img">
+					<div class="features-img"><img src="images/features/features-img-1.png" alt="" class="features__img"></div>
 					<div class="features__title">Real-time all the time</div>
 					<p class="features__text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
 					<p class="features__text">Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.</p>
 				</div>
 				<div class="feature">
-					<img src="images/features/features-img-2.png" alt="" class="features__img">
+					<div class="features-img"><img src="images/features/features-img-2.png" alt="" class="features__img"></div>
 					<div class="features__title">Adopt without any obstacles</div>
 					<p class="features__text">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
 					<p class="features__text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
@@ -57,17 +57,20 @@
 	<section class="iphone-feature-section">
 		<div class="container">
 			<div class="iphone-feature">
-				<h2 class="section__title">Your day <br>is protected</h2>
-				<p class="section__text">There have not been any since we have lived here, said my mother. </p>
-				<p class="section__text">We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
-				<div class="buttons-block">
-					<div class="button blue__button">
-						<span>Try to hack us</span>
+				<div class="iphone-feature-img"><img src="images/iphone-feature/iphone-feature-img.png" alt="" class="iphone-feature__img"></div>
+				<div class="iphone-feature-block">
+					<h2 class="section__title">Your day <br>is protected</h2>
+					<p class="section__text">There have not been any since we have lived here, said my mother. </p>
+					<p class="section__text">We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
+					<div class="buttons-block">
+						<div class="button blue__button">
+							<span>Try to hack us</span>
+							<img src="images/iphone-feature/button-right.png" alt="">
+						</div>
+						<div class="button white__button">Learn more</div>
 					</div>
-					<div class="button white__button">Learn more</div>
 				</div>
 			</div>
-			<div class="iphone-feature-img"><img src="images/iphone-feature/iphone-feature-img.png" alt="" class="iphone-feature__img"></div>
 		</div>
 	</section>
 	<section class="map-feature-section">
@@ -85,18 +88,31 @@
 			<div class="map-feature-img"><img src="images/map-feature/map-feature-img.png" alt="" class="map-feature__img"></div>
 		</div>
 	</section>
-
-
+	<section class="screens-section">
+		<div class="screens">
+			<h2 class="section__title">Beautiful Interface</h2>
+			<div class="section__line"></div>
+			<span class="screen-art">Landing Screen</span>
+			<img src="images/screens/iPhone 6111.psb.png" alt="" class="iphone">
+			<div class="screens-slider">
+				<img src="images/screens/Sign Up1.psb.png" alt="" class="slider__item">
+				<img src="images/screens/Sign Up11.psb.png" alt="" class="slider__item">
+				<img src="images/screens/Srcreen11.psb.png" alt="" class="slider__item">
+				<img src="images/screens/Sign Up111.psb.png" alt="" class="slider__item">
+				<img src="images/screens/Sign Up1111.psb.png" alt="" class="slider__item">
+			</div>
+		</div>
+	</section>
 	<section class="ready-to-buy-section">
 		<div class="container">
 			<div class="ready-to-buy">
 				<span class="logo"><strong>New</strong>Providence</span>
 				<h2 class="section__title">Get it to your smartphone </h2>
-				<form action="">
-					<input type="text" placeholder="your email">
+				<form class="ready-to-buy-input-block" action="">
+					<input type="text" placeholder="Your e-mail">
 					<button class="button green__button">
 						<span>Send Invite</span>
-						<img src="" alt="">
+						<img src="images/ready-to-buy/button-img.png" alt="">
 					</button>
 				</form>
 				<span class="or-download">or Download From</span>
@@ -107,6 +123,18 @@
 						<span>App Store</span>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+	<section class="subscribe-section">
+		<div class="container">
+			<div class="subscribe">
+				<h2 class="section__title">Subscribe our newsletters</h2>
+				<form class="subscribe-input-block" action="">
+					<input type="text" placeholder="Your e-mail">
+					<button class="button green__button">Subscribe</button>
+				</form>
+				<span class="spam">We promise to never spam you.</span>
 			</div>
 		</div>
 	</section>
@@ -167,5 +195,8 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/slick.min.js"></script>
 </body>
 </html>

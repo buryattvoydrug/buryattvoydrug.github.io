@@ -1,0 +1,34 @@
+.screens{
+	padding: 134px 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+	position: relative;
+	.section__line{
+		width: 50px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: #267df4;
+		margin: 36px 0 42px;
+	}
+	.iphone{
+		top: 318px;
+		filter: drop-shadow(15px 41px 66px rgba(92, 95, 101, 0.28));
+		filter: drop-shadow(3px 9px 16px rgba(61, 61, 62, 0.15));
+		position: absolute;
+		z-index: -1;
+	}
+	.screens-slider{
+		padding: 115px 0 0;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		img{
+			width: 320px !important;
+			margin: 15px 25px 220px;
+			box-shadow: 15px 41px 66px rgba(92, 95, 101, 0.28), 3px 9px 16px rgba(61, 61, 62, 0.15);
+		}
+
+	}
+}

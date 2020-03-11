@@ -1,15 +1,25 @@
 .footer{
+	padding: 89px 0 110px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	border-top: 1px solid rgba(38, 39, 45, 0.05);
+	border-bottom: 1px solid rgba(38, 39, 45, 0.05);
 	.footer-left{
+		.logo{
+			font-size: 16px;
+			strong{
+				font-size: 16px;
+			}
+			letter-spacing:0;
+		}
 		.footer__text{
-			padding: 10px 0 10px;
+			padding: 25px 0 20px;
 			display: block;
 			max-width: 250px;
 		}
 		.social{
-			margin: 20px 0 20px;
+			margin: 29px 0 20px;
 			width: 222px;
 			display: flex;
 			align-items: center;
@@ -17,11 +27,21 @@
 		}
 	}
 	.footer-right{
+		width: 475px;
+		margin-right: 96px;
 		.footer-navbar{
 			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 			.nav-col{
 				display: flex;
 				flex-direction: column;
+				.nav__title{
+					padding-bottom: 20px;
+				}
+				.nav__item{
+					padding-bottom: 17px;
+				}
 			}
 		}
 	}
