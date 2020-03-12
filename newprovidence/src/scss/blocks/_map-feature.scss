@@ -27,3 +27,17 @@
 	top: 207px;
 	right: -9.5%;
 }
+@media (max-width: 1199px){
+	.map-feature-section{
+		.map-feature{
+			width: 350px;
+			padding: 70px 0; 
+		}
+		.map-feature-img{
+			right:-50%;
+			img{
+				width: 70%;
+			}
+		}
+	}
+}

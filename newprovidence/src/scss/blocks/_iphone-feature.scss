@@ -29,3 +29,16 @@
 		}
 	}
 }
+@media (min-width:768px) and (max-width:1199px){
+	.iphone-feature{
+		padding: 70px 0 70px ;
+		.iphone-feature-img{
+			img{
+				width: 70%;
+			}
+		}
+		.iphone-feature-block{
+			width: 350px;
+		}
+	}
+}

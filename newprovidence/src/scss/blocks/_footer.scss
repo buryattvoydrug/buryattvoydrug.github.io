@@ -51,3 +51,11 @@
 	justify-content: space-between;
 	align-items: center;
 }
+@media (min-width:768px) and (max-width:1199px){
+	.footer{
+		padding-left: 50px;
+		.footer-right{
+			padding-top: 20px;
+		}
+	}
+}

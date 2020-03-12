@@ -19,3 +19,14 @@
 		}
 	}
 }
+@media (max-width:1200px){
+	.features-section{
+		.features{
+			padding: 0;
+			.feature{
+				width: 50%;
+				padding: 100px 30px;
+			}
+		}
+	}
+}

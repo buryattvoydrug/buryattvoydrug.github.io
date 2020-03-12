@@ -56,3 +56,52 @@ header{
 		margin: 0 auto;
 	}
 }
+@media (min-width: 768px) and(max-width: 1199px){
+	header{
+		.navbar{
+			justify-content: space-between;
+			.nav__item{
+				display: none;
+			}
+			.nav:first-child{
+				.nav__link{
+					padding: 0 76px;
+					margin-right: 0;
+				}
+			}
+		}
+		.section__text{
+			width: 90%;
+		}
+	}
+}
+@media (max-width: 767px){
+	header{
+		position:relative;
+		.navbar{
+			flex-direction: row-reverse;	
+			justify-content: space-around;
+			.nav__item{
+				display: none;
+			}
+			.nav:first-child{
+				.nav__link{
+					padding: 0;
+					margin-right: 0;
+				}
+			}
+			.blue__button{
+				position: absolute;
+				left:50%;
+				transform: translateX(102px);
+				top:300px;
+			}
+		}
+		.section__text{
+			display: none;
+		}
+		.iphone{
+			width: 80%;
+		}
+	}
+}
