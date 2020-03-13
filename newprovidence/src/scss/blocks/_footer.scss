@@ -59,3 +59,14 @@
 		}
 	}
 }
+@media (max-width: 767px){
+	.footer-right{
+		.footer-navbar{
+			display: flex;
+			flex-direction: column !important;
+			.nav-col{
+				padding: 20px 30px;
+			}
+		}
+	}
+}

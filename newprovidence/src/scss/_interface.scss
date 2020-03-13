@@ -51,3 +51,8 @@
 		max-width:787px;
 	}
 }
+@media (max-width:767px){
+	form{
+		max-width: 100% !important;
+	}
+}

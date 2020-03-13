@@ -92,16 +92,22 @@ header{
 			}
 			.blue__button{
 				position: absolute;
+				margin-right: 0 !important;
 				left:50%;
-				transform: translateX(102px);
-				top:300px;
+				transform: translateX(-76px);
+				top:370px;
 			}
 		}
+		.header__title{
+			font-size: 52px;
+			line-height: 62px;
+			padding: 50px 0 20px;
+		}
 		.section__text{
-			display: none;
+			display: none;	
 		}
 		.iphone{
-			width: 80%;
+			width: 70%;
 		}
 	}
 }

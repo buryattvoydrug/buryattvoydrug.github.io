@@ -42,3 +42,19 @@
 		}
 	}
 }
+@media (max-width:767px){
+	.iphone-feature{
+		padding: 30px 0;
+		justify-content: center;
+		flex-direction: column;
+		.iphone-feature-img{
+			padding: 0 0 20px;
+			position:relative;
+			top:inherit;
+			left:inherit;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
